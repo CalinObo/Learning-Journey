@@ -1,0 +1,18 @@
+Why should you use Emmet?
+
+We should use Emmet in order to save time when coding. It`s efficient.
+
+What are some useful Emmet abbreviations?
+
+Some useful Emmet abbreviatons are Wrap with Abbreviation and remove tag. 
+The first one is useful when it comes to wrapping multiple lines or create defaults, such as a (p in a div) and a h1 inside another div.
+The second one has it`s functionality in it`s name, it removes the tag, if you have 4 p in a div you can remove the div.
+
+What syntax would you use to create this element <p class="text"></p>?
+p.text
+
+What syntax expands to an element with a child element inside of it? For example : <div><p></p></div>
+div>p
+
+What syntax would you use to create three elements that have the same class name? 
+.class*3

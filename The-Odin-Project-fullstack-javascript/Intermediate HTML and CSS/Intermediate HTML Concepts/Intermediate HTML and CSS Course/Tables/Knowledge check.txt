@@ -1,0 +1,20 @@
+What is a table?
+
+A table is a structured sed of data made up of rows and columns (tabular data).
+A table allows you to quickly and easily look up values that indicate some kind of connection between different types of data,
+for example a person and their age, or a day of the week, or a timetable for the bus schedules.
+
+Why is a bad idea to use HTML Tables for page layout?
+
+HTML tables should be used for tabular data - this is what they are designed for. 
+Unfortunately a lot of people used to use HTML tables to lay out web page, e.g. one row to containt the header, one row to contain the content columns, one row to contain the footer, etc.
+
+The reasons for which using table for layout rather than css is a bad ideea are as follows:
+- Layout tables reduce accessiblity for visually impaired users
+- Tables produce tag soup
+- Tables are not automatically responsive
+
+What are caption elements useful for.
+
+The caption elements are useful when it comes to describing the table contents or having a little detail about the table.
+If we were to have a table with a list with our expenses we could use something like "How I chose to spend my money" as caption

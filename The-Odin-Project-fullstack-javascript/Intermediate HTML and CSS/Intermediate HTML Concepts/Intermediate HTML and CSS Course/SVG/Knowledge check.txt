@@ -1,0 +1,18 @@
+What is the xmlns attribute?
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+xlmns- stands for "XML NameSpace. This specifies what dialect of xml you`re using.In our case, the dialect is the SVG language spec.
+Without it, some browsers will not render your image or will render it incorrectly.
+
+What are some situations where you wouldn`t want to use SVG?
+The situations in which I would not use SVG are when I try to render more detailed pictures, whether they have fine details or textures.
+Then SVGs are not the tool for the job.
+
+What are the benefits of "inlining" your SVGs? What are the drawbacks?
+The benefits of inlining my SVG are:
+-the SVG properties will be visible in my code, which will alow me to alter the image dinamically via CSS or JavaScript.
+-it will unlock their full potential.
+The drawbacks are:
+-it will make the code harder to read.
+-if it`s a large SVG the page will load slower
+-it`ll make my page less cacheable
