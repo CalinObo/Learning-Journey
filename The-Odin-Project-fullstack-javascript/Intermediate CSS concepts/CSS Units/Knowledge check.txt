@@ -1,0 +1,24 @@
+Why would you want to use em or rem for font-size instead of px?
+
+1em is the font size of an element (or the element`s parents if I`m using it to set font-size).
+1rem is the font size of the root element (either:root or html).
+The recommended unit to use is rem since many browsers allow users to change the base font-size to increase readability.
+Using rem,the change to the base font-size will apply to all of our elements.
+It`s is better to use em or rem rather than px, because they adapt to the device`s width, it`s more responsive.
+If we use px we will have to make sure that the change looks good on all of the devices (media queries etc.)
+
+What a some instances where you might want to use vh an vw?
+
+Some of the instances in which we would want to use vh and vw are:
+-set a minimum and maxium view height or witdh for text. We can also responsive typography with the calc() formula so that the changes in view will not be drastic.
+-to constrain our application to the height of the viewport with a single declaration on the body element, height:100vh. We have to make sure to apply overflow values on internal elements, so our content isn`t cut off.
+-we can create a sticky footer with min-height:100 so that the footer will stay in place at the bottom of our screen until it`s pushed down by content.
+-we can apply height, min-height, or max-height of various elements to create full-screen sections, hero images and more.
+-to have fluid aspect ratios, it also comes in handy when we have videos on our webpage.
+-to break the container
+-they are mainly used with the calc formula so that the content we are seeing changes accordingly to the size of the screen.
+
+What are some instances where you might want to use px instead of relative unit?
+
+We might want to use pixels in everything, pixel is a absolut unit size, while em changes according to it`s parent`s size. The em can get troublesome since one change can affect the whole page.
+One point of view is to use rem for font-size and px for everything else.

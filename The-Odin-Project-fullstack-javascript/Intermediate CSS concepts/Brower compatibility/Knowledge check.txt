@@ -1,0 +1,13 @@
+What is the most used browser currently?
+
+The most used browser currently is Chrome.
+
+What was the original name of the first web browser?
+
+The original name of the first web browser was WorldWideWeb browser, later it got renamed to Nexus.
+
+How are mobile browsers different on Apple mobile operating systems from Android?
+
+The browsers on Apple mobile OS use WebKit as their rendering engine. Safari is technically the only supported browser.
+Chrome and firefox on iOS are not full browser, they are still using the Safari rendering engine.
+On android the rendering engine is Blink.

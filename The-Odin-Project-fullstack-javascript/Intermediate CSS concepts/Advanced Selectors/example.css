@@ -1,0 +1,149 @@
+main div {
+    background-color: red;
+    /*
+    CSS INTRA AICI
+    SELECT ALL THE CHILD AND GRAND CHILD DIVS INSIDE OF MAIN
+    */
+}
+
+/*This rule will only select divs with a class of child*/
+main>div {
+    background-color: blue;
+    /* CSS INTRA AICI */
+}
+
+/* This rule will only select divs with a class of grand-child */
+main>div>div {
+    background-color: green;
+    /* CSS INTRA AICI */
+}
+
+/* This rule will only select the div with the class child group2 */
+.group1+div {
+    background-color: black;
+    /* CSS INTRA AICI */
+}
+
+/* This rule will only select the div the class child group3 */
+.group1+div+div {
+    background-color: orange;
+    /* css intra aici */
+}
+
+/* This rule will select all of .group1`s siblings - in this case the 2nd and 3rd .child divs */
+.group1~div {
+    background-color: brown;
+    /* css intra aici */
+}
+
+textarea:focus {
+    background: pink;
+}
+
+a {
+    position: relative;
+}
+
+a:link {
+    color: yellow;
+}
+
+a:visited {
+    color: aqua;
+}
+
+a:hover {
+    color: green;
+    text-decoration: underline overline;
+}
+
+a:active {
+    top: 2px;
+    color: orangered;
+}
+
+.myList:nth-child(5) {
+    background-color: red;
+}
+
+.myList:nth-child(3n) {
+    background-color: blue;
+}
+
+.myList:nth-child(3n+2) {
+    background-color: yellow;
+}
+
+.myList:nth-child(even) {
+    background-color: green;
+}
+.myList:nth-child(2n+2){
+    background-color: tomato;
+}
+.myList::first-letter{
+    background-color: orange;
+}
+.myList::marker{
+    font-weight: bold;
+    color:red;
+}
+.primaLitera::first-letter{
+    font-weight: 900;
+    color:purple;
+}
+.primaLitera::first-line{
+    background-color: aqua;
+}
+
+.selectie::selection{
+    background-color: red;
+}
+
+.emojify::before {
+    content: '😎 🤓';
+}
+.emojify::after{
+    content:'🤓 😎'
+}
+
+/* [attribute] va selecta oriunde apare acel atribut, valoarea lui nu conteaza */
+[src]{
+    display: none;
+}
+/*  selector[attribute] putem folosi selectorul de atribute cu un alt tip de selector */
+img[src]{
+    display: none;
+}
+
+/* [attribute="value"] putem fi foarte specifici folosind = si sa cautam atributul egal cu o anumita valoare */
+img[src="puppy.jpg"]{
+    display:none;
+}
+
+/* [attribute^="value"] ^= will match strings from the start */
+[class^='aus']{
+    display:none;
+    /*
+    clasele sunt si ele attributes 
+    va targeta clasele care incep cu aus
+     */
+}
+
+/*[src$='.jpg']  $= will math strings from the end */
+[src$='.jpg']
+{
+    display:none;
+    /* va targeta src care se termina cu .jpg */
+}
+
+/* [attribute*='value'] *= wildcard selector will match anywhere inside the string*/
+
+[for*='ill']{
+    display: none;
+    /*va targeta valoarea egala cu ill oriunde in string
+    for="bill"
+    for="jill"
+    for="silly"
+    for="ill"
+    */
+}

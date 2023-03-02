@@ -1,0 +1,33 @@
+What is the difference between static and relative positioning?
+
+Static positioning is the default for every single page element. Different elements don`t have different default values for positioning, they all start out as static.
+Static doesn`t mean much; it just means that the element will flow into the page as it normally would.
+The only reason we would ever set an element to position :static; is to forcefully remove some positioning that god applied to an element outside of our control.
+This si farili rare, as positioning doesn`t cascade.
+
+Relative positioning really means relative to itself. If we se position: relative; on an element but no other positioning
+attributes(top,left,bottorm,right) it will have no effect on it`s positioning at all, it will be exactly as it would be
+if we left it as position static; But if we do give it some other positiong attribute say, top:10px; it will shift it`s 
+position 10 pixels down from where it would normally be.
+
+The difference between static and relative positiong is that if we give the relative positioned elements some attributes
+it will move relative to itself. On the other hand if we do the same thing to static, nothing happens.
+
+
+What is absolute positioning useful for?
+
+Absolute positiong allows us to literally place any page element exactly where we want it. We use the positioning attributes
+top,left,bottom and right to se the location. We have to remember that these values will be relative to the next parent element with relative or absolute positioning.
+If there is no such parent, it will default all the way back up to the <html> element iself meaning it will be placed relative ot the page itself.
+
+The important thing to know about the absolute positioning is that these elements are removed from the flow of elements on the page. An element with this
+type of positioning is not affected by other elements and it doesn`t affect other elements.
+
+Some useful cases are for: modals, image with a caption on it and icons on top of other elements.
+
+What is the difference between fixed and sticky positioning?
+
+The difference between fixed and sticky is that position:fixed generally means fixed to the viewport. I will tell where to position itself, and it stays there as the user scrolls.
+It is out of the flow of the rest of the document. On the other hand, sticky scrolls along like anything else until it reaches the offset that you set. At that point it act`s like it`s fixed.
+There is a catch thought, the sticky position must stay within it`s containing block (it`s parent). Once that containing block scrolls of the page, it leaves with it.
+

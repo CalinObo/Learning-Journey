@@ -1,0 +1,39 @@
+What is the difference between the child combinator and the descendant combinator?
+
+The difference is that the child combinator will select the elements that are child of some other element, for example:
+<article>
+	<div><p>Lorem</p></div>
+</article
+<div><p>Ipsum</p></div>
+
+article>div is a child combinator and will select Lorem, article +div is a descendant combinator and will select Ipsum.
+
+
+How does the syntax of pseudo-classes and pseudo-elements differ?
+
+Pseudo-classes offer us different ways to target elements in our html. Some are base on their position or structure 
+within the html. Others are based on the state of a particular element, or how the user is currently interacting with it.
+Some examples are :focus :link :hover :active :visited. 
+
+Pseudo elements are more abstract, they allow us to affect patrs of our html that aren`t elements at all.
+Some examples are ::marker ::first-letter ::first-line ::selection ::before and ::after
+
+As a rule, double colons (::) should be used instead of a single colon(:). This distinguishes pseudo-classe from pseudo-elements.
+
+Do pseudo-classes exist somewhere in HTML? Do pseudo-elements?
+Yes they both do.
+
+Name two ways you could select every second child of an elements, starting with the first.
+The first way to select every second child of an elements is .class:nth-child(2n+2) and the second way is .class:nth-child(even).
+
+What is the difference between div:first-child and div:last-child? What will each select.
+:first-child and :last-child will match elements that are the first or last sibling.
+
+What selector would you use to style a button a user is currently hovering over? How about one that is currently being clicked on?
+The first selector would be a:hover, tha second selector is a:active.
+
+How could you select all input elements with a type of text?
+input[type="text"]
+
+How could you select all classes that begin with thunder?
+[class^='thunder']

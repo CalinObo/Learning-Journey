@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label,input,button{
+            display: block;
+            margin:5px;
+        }
+        button{
+            margin-top:8px;
+        }
+    </style>
+</head>
+<body>
+    <form action="http://httpbin.org/post" method="post">
+        <fieldset>
+            <legend>
+                Edit your preferences
+            </legend>
+        <label for="email">Email:</label>
+        <input type="email" name="userEmail" id="email">
+        <label for="website">Website:</label>
+        <input type="url" id="website" name="website">
+        <label for="userPhone">Phone number</label>
+        <input type="tel" id="userPhone" name="phoneNumber">
+        <label for="color">Favorite color:</label>
+        <input type="color" id="color" name="favoriteColor">
+        <button type="submit">Update preferences</button>
+    </fieldset>
+    </form>
+</body>
+</html>

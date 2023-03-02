@@ -1,0 +1,4 @@
+why would you want to use a CSS reset?
+
+I would want to use a CSS reset in order to make sure that my website will look the same on all of the browsers.
+Each browser insert a little bit of css into every webpage, while incosistencies are going to be pretty minor, they do exist.

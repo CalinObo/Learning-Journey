@@ -1,0 +1,27 @@
+How would you declare a custom property with a name of text-color?
+
+We could declare it with --text-color. We have to use it inside of root in order to make it globally.
+root:
+{
+	--text-color:blue;
+}
+
+How would you acces a custom property with a name of background-color?
+
+We could acces it by using var(). For example we could have 
+p{
+	color:var(--text-color,yellow);
+}
+We can also add a fallback value in case that the --text-color property doesn`t work. In our case the fallback is yellow.
+
+Where would you declare a custom property to have its scope be global and accessible by all other selectors?
+
+We could declare it in the root selector :root{}.
+
+Where would you declare a custom property so that a user`s theme setting from their OS or browser was taken into account?
+We would declare it in the root selector. We could add a class to our html element so that it would have a default class.
+After that we cand add on our root selector using :root.dark/:root.light custom properties.
+We can also make use of media query using @media(prefes-color-scheme:dark). Keep in mind that this works only with dark and light.
+
+
+

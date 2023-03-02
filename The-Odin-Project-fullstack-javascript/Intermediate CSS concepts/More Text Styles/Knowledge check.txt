@@ -1,0 +1,29 @@
+What are the 2 ways to add fonts that are not installed on a user`s computer?
+
+We can use an online font library like Google Fonts, Font Library or other services, to use a font from on of these libraries,
+we go to the website, select a font and then copy a snippet from the website to import that font from their server
+into our website. We`ll be given either a <link> tag to put in our html like.
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+Or an import tag that can be dropped at the top of a CSS file.
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+What is the 'system font stack' and why would you want to use it?
+
+The system font stack is the the font that the operating system is already using. We would want to use it because
+defaulting to the system font of a particular operating system can boost performance 
+because the browser doesn`t have to download any font files, it`s using the one it already had.
+
+Which property would you use to increase or decrease the space between letters in a word?
+
+We would use letter-spacing.
+
+Which property would you use to increase or decrease the space between lines in a paragraph?
+
+We would use line-height.
+
+
+
+
