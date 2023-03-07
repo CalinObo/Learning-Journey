@@ -70,6 +70,42 @@
     </select>
 
     <!-- Am ramas la autocomplete -->
+    <h3>Autocomplete box</h3>
+    <h4>Basic example</h4>
+    <label for="myFruit">What`s your favorite fruit?</label>
+    <input type="text" name="myFruit" id="myFruit" list="mySuggestion" />
+    <datalist id="mySuggestion">
+        <option value="Apple">Apple</option>
+        <option value="Banana">Banana</option>
+        <option value="Blackberry">Blackberry</option>
+        <option value="Blueberry">Blueberry</option>
+        <option value="Lemon">Lemon</option>
+        <option value="Lychee">Lychee</option>
+        <option value="Peach">Peach</option>
+        <option value="Pear">Pear</option>
+    </datalist>
+    <h4>Datalist support and fallbacks</h4>
+    <label for="myFruit2">What is your favourite fruit? (With fallback)</label>
+    <input type="text" id="myFruit2" name="fruit" list="fruitList" />
+    <datalist id="fruitList">
+        <label for="suggestion">or pick a fruit</label>
+        <select id="suggestion" name="altFruit">
+            <option>Apple</option>
+            <option>Banana</option>
+            <option>Blackberry</option>
+            <option>Blueberry</option>
+            <option>Lemon</option>
+            <option>Lychee</option>
+            <option>Peach</option>
+            <option>Pear</option>
+        </select>
+    </datalist>
+
+    <h3>Other form features</h3>
+    <h4>Meters and progress bars</h4>
+    <p>Progress</p>
+    <progress max="100" value="75">75/100</progress>
+
 </body>
 
 </html>
