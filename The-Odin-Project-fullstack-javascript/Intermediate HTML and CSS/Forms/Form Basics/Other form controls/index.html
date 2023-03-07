@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Textarea</h1>
+    <textarea cols="30" rows="8"></textarea>
+    <!-- Controlling textarea resizability 
+    The ability to resize a <textarea> is controlled with the CSS
+    resize property. Its possible values are:
+    -both: The default - allow resizing horizontally and vertically.
+    -horizontal: Allows resizing only horizontally.
+    -vertical: Allows resizing only vertically.
+    -none: Allows no resizing
+    -block and inline: Experimental valuea that allow resizing in the block or inline direction only
+    ( this varies depending on the directionality of your text;)
+    -->
+    <h1>Drop-down controls</h1>
+    <!-- Drop-down controls are a simple way to let users select
+    from many options without taking up much space in the user interface.
+    HTML has two types of drop-down controls: the select box and the 
+    autocomplete box. The interaction is the same in both the types of
+    drop-down controls - after the control is activated, the browser displays a 
+    list of values the user can select from.
+    -->
+    <h2>Basic example</h2>
+    <h3>Select box</h3>
+    <select id="simple" name="simple">
+        <option>Banana</option>
+        <option selected>Cherry</option>
+        <option>Lemon</option>
+    </select>
+    <h4>Optgroup</h4>
+    <select name="groups" id="groups">
+        <optgroup label="Fruits">
+            <option>Banana</option>
+            <option selected>Cherry</option>
+            <option>Lemon</option>
+        </optgroup>
+        <optgroup label="Vegetables">
+            <option>Carrot</option>
+            <option>Eggplant</option>
+            <option>Potato</option>
+        </optgroup>
+    </select>
+    <h4>Using the value attribute</h4>
+    <select name="simple2" id="simple2">
+        <option value="banana">Big, very beautiful yellow banana</option>
+        <option value="cherry">Succulent juicy cherry</option>
+        <option value="lemon">Sharp, powerful lemon</option>
+    </select>
+    <h4>Multiple choice select box</h4>
+    <select name="multi" id="multi" multiple size="3">
+        <optgroup label="Fruits">
+            <option value="banana">Banana</option>
+            <option value="Cherry" selected>Cherry</option>
+            <option value="lemon">Lemon</option>
+        </optgroup>
+        <optgroup label="Vegetables">
+            <option value="carrot">Carrot</option>
+            <option value="Eggplant">Eggplant</option>
+            <option value="potato">Potato</option>
+        </optgroup>
+    </select>
+
+    <!-- Am ramas la autocomplete -->
+</body>
+
+</html>
