@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ugly controls</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+            margin: 20px auto;
+            max-width: 400px;
+        }
+        form>div{
+            margin-bottom:20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div>
+            <label for="select">Select box:</label>
+            <div class="select-wrapper">
+                <select name="select" id="select">
+                    <option value="Banana">Banana</option>
+                    <option value="Cherry">Cherry</option>
+                    <option value="Lemon">Lemon</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <label for="myFruit">Favorite fruit?</label>
+            <input type="text" name="myFruit" id="myFruit" list="mySuggestion">
+            <datalist id="mySuggestion">
+                <option value="Apple">Apple</option>
+                <option value="Banana">Banana</option>
+                <option value="Blackberry">Blackberry</option>
+                <option value="Blueberry">Blueberry</option>
+                <option value="Lemon">Lemon</option>
+                <option value="Lychee">Lychee</option>
+                <option value="Peach">Peach</option>
+                <option value="Pear">Pear</option>
+            </datalist>
+        </div>
+
+        <div>
+            <label for="date1">Datetime local</label>
+            <input type="date1" name="date1" type="datetime-local">
+        </div>
+        <div>
+            <label for="range">Range:</label>
+            <input id="range" name="range" type="range">
+        </div>
+        <div>
+            <label for="color">Color:</label>
+            <input type="color" name="color" type="color">
+        </div>
+        <div>
+            <label for="file">File picker:</label>
+            <input type="file" id="file" name="file" multiple>
+            <ul id="file-list">
+
+            </ul>
+        </div>
+        <div>
+            <label for="progress">Progress: </label>
+            <progress max="100" value="75" id="progress">75/100</progress>
+        </div>
+        <div>
+            <label for="meter">Meter: </label>
+            <meter id="meter" min="0" max="100" value="75" low="33" high="66" optimum="50">
+                75
+            </meter>
+        </div>
+        <div>
+            <button>Submit?</button>
+        </div>
+    </form>
+</body>
+
+</html>
