@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="checkbox"] {
+            appearance: none;
+            position: relative;
+            width: 1em;
+            height: 1em;
+            border: 1px solid gray;
+            vertical-align: -2px;
+            color:green;
+        }
+
+        input[type="checkbox"]::before{
+            content:"✔";
+            position:absolute;
+            font-size:1.2em;
+            right:-1px;
+            top:-0.3em;
+            visibility: hidden;
+        }
+
+        input[type="checkbox"]:checked::before{
+            visibility: visible;
+        }
+        input[type="checkbox"]:disabled{
+            border-color:black;
+            background:#ddd;
+            color:gray;
+        }
+
+        span {
+            display: inline-block;
+            background: red;
+        }
+
+        /* input[type="checkbox"]{
+            width:100px;
+            height:100px;
+        } */
+    </style>
+</head>
+
+<body>
+    <form>
+        <p>
+            <label for="search">Search:</label>
+            <input type="search" id="search" name="search">
+        </p>
+
+        <p>
+            <label for="date">date:</label>
+            <input type="datetime-local" name="date" id="date">
+        </p>
+        <p>
+            <label for="radio">radio:</label>
+            <input type="radio" name="radio" id="radio">
+        </p>
+        <p>
+            <label for="checkbox">Checkbox:</label>
+            <input type="checkbox" name="checkbox" id="checkbox">
+        </p>
+        <p>
+            <input type="submit" value="submit">
+        </p>
+        <p>
+            <input type="button" value="button">
+        </p>
+
+        <label>
+            <span>
+                <input type="checkbox" name="q5" value="true" />
+            </span>
+            True
+        </label>
+        <label>
+            <span>
+                <input type="checkbox" name="q5" value="false">
+            </span>
+            False
+        </label>
+        <fieldset>
+            <legend>
+                Fruit preference
+            </legend>
+            <p>
+                <label>
+                    <input type="checkbox" name="fruit" value="cherry">
+                    I like cherry
+                </label>
+            <p>
+                <input type="checkbox" id="notbanana" name="fruit" value="banana" disabled>
+                <label for="notbanana">I can`t like banana</label>
+            </p>
+            <p>
+                <input type="checkbox" name="fruit" id="strawberry" value="strawberry">
+                <label for="strawberry">I like strawberry</label>
+
+            </p>
+            </p>
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
