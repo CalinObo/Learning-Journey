@@ -13,8 +13,9 @@
             margin: 20px auto;
             max-width: 400px;
         }
-        form>div{
-            margin-bottom:20px;
+
+        form>div {
+            margin-bottom: 20px;
         }
 
         button,
@@ -22,8 +23,48 @@
         input,
         select,
         progress,
-        meter{
-            display:block;
+        meter {
+            display: block;
+            font-family: inherit;
+            font-size: 100%;
+            margin: 0;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 5px;
+            height: 30px;
+        }
+
+        select {
+            appearance: none;
+        }
+
+        .select-wrapper {
+            position: relative;
+        }
+
+        .select-wrapper::after{
+            content:"▼";
+            font-size:1rem;
+            top: 6px;
+            right:10px;
+            position: absolute;
+        }
+
+        input[type="text"],
+        input[type="datetime-local"],
+        input[type="color"],
+        select{
+            box-shadow: inset 1px 1px 3px #ccc;
+            border-radius:5px;
+        }
+
+        label{
+            margin-bottom:5px;
+        }
+
+        button{
+            width:60%;
+            margin:0 auto;
         }
     </style>
 </head>
@@ -57,7 +98,7 @@
 
         <div>
             <label for="date1">Datetime local</label>
-            <input type="date1" name="date1" type="datetime-local">
+            <input id="date1" name="date1" type="datetime-local">
         </div>
         <div>
             <label for="range">Range:</label>
@@ -88,6 +129,41 @@
             <button>Submit?</button>
         </div>
     </form>
+
+    <script>
+        const fileInput = document.querySelector('#file');
+        const fileList = document.querySelector('#file-list')
+    
+        fileInput.addEventListener('change',updateFilelist);
+
+        function updateFilelist(){
+            while(fileList.firstChild){
+                fileList.removeChild(fileList.firstChild);
+            }
+
+            let curFiles = fileInput.files;
+
+            if(!(curFiles.length===0)){
+                console.log('test');
+                for(let i=0;i<curFiles.length;i++)
+                {
+                    const listItem=document.createElement('li');
+                    listItem.textContent='File name: '+ curFiles[i].name+'; file size ' +returnFileSize(curFiles[i].size)+'.';
+                    fileList.appendChild(listItem)
+                }
+            }
+        }
+
+        function returnFileSize(number){
+            if(number<1024){
+                return number + 'bytes';
+            } else if (number >= 1024 && number < 1048576){
+                return (number/1024).toFixed(1) + 'KB';
+            } else if(number >= 1048576){
+                return(number/1048576)/toFixed(1) + 'MB';
+            }
+        }
+    </script>
 </body>
 
 </html>
