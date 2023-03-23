@@ -19,10 +19,12 @@
         }
 
         .form1 fieldset,
-        .form2 fieldset {
+        .form2 fieldset,
+        .form3 fieldset {
             padding: 10px 30px 0;
         }
 
+        .form3 legend,
         .form2 legend,
         .form1 legend {
             color: white;
@@ -30,12 +32,16 @@
             padding: 5px 10px;
         }
 
+        .form3 fieldset>div,
         .form1 fieldset>div {
             margin-bottom: 20px;
             display: flex;
             flex-flow: row wrap;
         }
 
+        .form3 button,
+        .form3 label,
+        .form3 input,
         .form1 button,
         .form1 label,
         .form1 input {
@@ -50,26 +56,32 @@
             height: 30px;
         }
 
+        .form3 input,
         .form1 input {
             box-shadow: inset 1px 1px 3px #ccc;
             border-radius: 5px;
         }
 
+        .form3 input:hover,
+        .form3 input:focus,
         .form1 input:hover,
         .form1 input:focus {
             background-color: #eee;
         }
 
-        .form1 button {
+        .form1 button,
+        .form3 button {
             width: 60%;
             margin: 0 auto;
         }
 
-        .form1 input:required {
-            border: 2px solid red;
+        .form1 input:required,
+        .form3 input:required {
+            border: 2px solid rgb(0, 0, 0);
         }
 
-        .form1 input:optional {
+        .form1 input:optional
+        .form3 input:optional {
             border: 2px solid blue;
         }
 
@@ -104,11 +116,13 @@
             transition: all 0.3s cubic-bezier(0.25, 0.25, 0.56, 2)
         }
 
-        .form1 input+span {
+        .form1 input+span,
+        .form3 input+span {
             position: relative;
         }
 
-        input:required+span::after {
+        .form1 input:required+span::after,
+        .form3 input:required+span::after {
             font-size: 0.7rem;
             position: absolute;
             content: "required";
@@ -117,6 +131,50 @@
             padding: 5px 10px;
             top: -26px;
             left: -70px;
+        }
+
+        .form1 input+span::before,
+        .form3 input+span::before  {
+            position: absolute;
+            right: -20px;
+            top: 5px;
+        }
+
+        .form1 input:invalid,
+        .form3 input:invalid {
+            border: 2px solid red;
+        }
+
+        input:invalid+span::before {
+            content: "✖";
+            color: red;
+        }
+
+        input:valid+span::before {
+            content: "✓";
+            color: green;
+        }
+
+        input + span::after{
+            font-size:0.7rem;
+            position: absolute;
+            padding:5px 10px;
+            top:-26px;
+        }
+
+        input:required + span::after{
+            color:white;
+            background-color: black;
+            content:"Required";
+            left:-70px;
+        }
+
+        .form3 input:out-of-range + span::after{
+            color:white;
+            background-color: red;
+            width:155px;
+            content:"Outside allowable value range";
+            left:-182px;
         }
     </style>
 </head>
@@ -141,6 +199,7 @@
                     Email address (include if you want a response):
                 </label>
                 <input id="email" name="email" type="email">
+                <span></span>
             </div>
             <div>
                 <button>
@@ -172,6 +231,32 @@
                 </label>
             </p>
         </fieldset>
+    </form>
+
+    <form class="form3" action="http://httpbin.org/post" method="post">
+        <fieldset>
+            <legend>Feedback form</legend>
+            <p>Required fields are labelled with "required"</p>
+            <div>
+                <label for="ffName">Name:</label>
+                <input type="text" id="ffName" name="userName" required>
+                <span></span>
+            </div>
+            <div>
+                <label for="age">Age (must be 12+):</label>
+                <input type="number" id="age" name="userAge" min="12" max="120" required>
+                <span></span>
+            </div>
+            <div>
+                <label for="ffemail">Email address (include if you want a response):</label>
+                <input type="email" id="ffemail" name="userEmail">
+                <span></span>
+            </div>
+            <div>
+                <button type="submit">Submit this form</button>
+            </div>
+        </fieldset>
+
     </form>
 </body>
 
