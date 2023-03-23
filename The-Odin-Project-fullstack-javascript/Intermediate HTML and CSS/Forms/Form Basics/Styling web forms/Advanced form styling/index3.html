@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI pseudo-classes</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap">
+    <style>
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+            margin: 20px auto;
+            max-width: 460px;
+        }
+
+        form {
+            margin-bottom: 10px;
+        }
+
+        .form1 fieldset,
+        .form2 fieldset {
+            padding: 10px 30px 0;
+        }
+
+        .form2 legend,
+        .form1 legend {
+            color: white;
+            background: black;
+            padding: 5px 10px;
+        }
+
+        .form1 fieldset>div {
+            margin-bottom: 20px;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .form1 button,
+        .form1 label,
+        .form1 input {
+            display: block;
+            font-family: inherit;
+            font-size: 100%;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 5px;
+            height: 30px;
+        }
+
+        .form1 input {
+            box-shadow: inset 1px 1px 3px #ccc;
+            border-radius: 5px;
+        }
+
+        .form1 input:hover,
+        .form1 input:focus {
+            background-color: #eee;
+        }
+
+        .form1 button {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        .form1 input:required {
+            border: 2px solid red;
+        }
+
+        .form1 input:optional {
+            border: 2px solid blue;
+        }
+
+        .form2 input[type="radio"] {
+            appearance: none;
+        }
+
+        .form2 input[type="radio"] {
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            border: 2px solid gray;
+            vertical-align: -2px;
+            outline: none;
+        }
+
+        input[type="radio"]::before {
+            display: block;
+            content: " ";
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+            background-color: red;
+            font-size: 1.2em;
+            transform: translate(3px, 3px) scale(0);
+            transform-origin: center;
+            transition: all 0.3s ease-in;
+        }
+
+        input[type="radio"]:checked::before {
+            transform: translate(3px, 3px) scale(1);
+            transition: all 0.3s cubic-bezier(0.25, 0.25, 0.56, 2)
+        }
+
+        .form1 input+span {
+            position: relative;
+        }
+
+        input:required+span::after {
+            font-size: 0.7rem;
+            position: absolute;
+            content: "required";
+            color: white;
+            background-color: black;
+            padding: 5px 10px;
+            top: -26px;
+            left: -70px;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="form1">
+        <fieldset>
+            <legend>Feedback form</legend>
+            <p>Required fields are labelled with "required"</p>
+            <div>
+                <label for="firstName">First name: *</label>
+                <input id="firstName" name="firstName" type="text" required>
+                <span></span>
+            </div>
+            <div>
+                <label for="lastName">Last name: *</label>
+                <input id="lastName" name="lastName" type="text" required>
+                <span></span>
+            </div>
+            <div>
+                <label for="email">
+                    Email address (include if you want a response):
+                </label>
+                <input id="email" name="email" type="email">
+            </div>
+            <div>
+                <button>
+                    Submit
+                </button>
+            </div>
+        </fieldset>
+    </form>
+
+    <form class="form2">
+        <fieldset>
+            <legend>Choose your favourite fruit</legend>
+            <p>
+                <label>
+                    <input type="radio" name="fruit" value="cherry">
+                    Cherry
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="fruit" value="Banana">
+                    Banana
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="fruit" value="Strawberry">
+                    Strawberry
+                </label>
+            </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>
