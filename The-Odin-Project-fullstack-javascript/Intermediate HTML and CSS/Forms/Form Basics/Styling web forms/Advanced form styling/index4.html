@@ -16,7 +16,7 @@
 
         fieldset {
             padding: 10px 30px 0px;
-            margin-bottom:20px
+            margin-bottom: 20px
         }
 
         legend {
@@ -48,21 +48,24 @@
             box-shadow: inset 1px 1px 3px #ccc;
             border-radius: 5px;
         }
-        
+
         input:hover,
-        input:focus{
+        input:focus {
             background: #eee;
         }
+
         button {
             width: 60%;
             margin: 0 auto;
         }
-        input[type="text"]:disabled{
+
+        input[type="text"]:disabled {
             background: #eee;
-            border:1px solid #ccc;
+            border: 1px solid #ccc;
         }
-        .disabled-label{
-            color:#aaa;
+
+        .disabled-label {
+            color: #aaa;
         }
     </style>
 </head>
@@ -116,6 +119,22 @@
             <button>Submit</button>
         </div>
     </form>
+    <script>
+        document.addEventListener(
+            "DOMContentLoaded", () => {
+                document
+                    .getElementById("billing-checkbox")
+                    .addEventListener("change", toggleBilling)
+            },
+            false
+        );
+
+        function toggleBilling(){
+            const billingItems=document.querySelectorAll('#billing input[type="text"]');
+        }
+
+    </script>
+
 </body>
 
 </html>
