@@ -129,8 +129,22 @@
             false
         );
 
-        function toggleBilling(){
-            const billingItems=document.querySelectorAll('#billing input[type="text"]');
+        function toggleBilling() {
+            const billingItems = document.querySelectorAll('#billing input[type="text"]');
+            const billingLabels = document.querySelectorAll(".billing-label")
+
+            for (let i = 0; i < billingItems.length; i++) {
+                billingItems[i].disabled = !billingItems[i].disabled;
+
+                if (
+                    billingLabels[i].getAttribute("class") === "billing-label disabled-label"
+                ) {
+                    billingLabels[i].setAttribute("class", "billing-label");
+                } else {
+                    billingLabels[i].setAttribute("class", "billing-label disabled-label");
+                }
+            }
+
         }
 
     </script>

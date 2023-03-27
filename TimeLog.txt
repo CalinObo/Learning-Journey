@@ -57,3 +57,9 @@ Left at: We`ve directly selected the inputs
     15:15 Lunch
     16:15 Task
     18:20 Offline
+27/03/2023
+    09:30 Started Learning
+    11:30 Daily
+    12:10 Learning
+    13:10 Task
+    14:15 Lunch
