@@ -1,6 +1,6 @@
 To-do:
-Put basic form and postcard in portofolio
-Left at: We`ve directly selected the inputs
+-Put basic form and postcard in portofolio
+-Left at: We`ve directly selected the inputs
 17/03/2023
     09:30 Started Learning
     11:30 12:00 Daily
@@ -63,3 +63,5 @@ Left at: We`ve directly selected the inputs
     12:10 Learning
     13:10 Task
     14:15 Lunch
+    15:00 Learning
+    17:30 Offline
