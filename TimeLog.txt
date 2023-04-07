@@ -113,6 +113,16 @@ To-do:
     14:40 Lunch
     15:40 Learning
     17:10 Commit
+    17:40 Offline
+06/04/2023-Day Off
+07/04/2023
+    09:30 Learning
+    11:20 Commit
+    11:30 Daily
+    12:10 Task
+    14:20 Lunch
+    15:30 Learning
+    
 
     
 

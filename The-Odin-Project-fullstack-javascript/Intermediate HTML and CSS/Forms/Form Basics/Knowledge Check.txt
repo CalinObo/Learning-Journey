@@ -1,0 +1,25 @@
+Explain what the form element is for and two attributes it should always include.
+
+The form element is a container element like the div element. The form element wraps all of the inputs a user will interact with on a form.
+The form element accepts two essential attributes:
+- the first is the action attribute which takes a URL value that tells the form where it should send its data to be processed.
+- the second is the method attribute which tells the browser which HTTP request method it should use to submit the form. The most
+  used one are get and post.
+
+Explain what form controls are at a high level.
+
+In order to start collecting user data, we need to use form control elements. These are all the elements users will interact with on the form.
+Some examples are:
+-inputs which can be of all kinds, it can ask for text, number, email addreses. We can also have radioboxes and checkboxes.
+-textarea in which we can ask the user to type something more than his/her name.
+-meter bars/progress bars which show the progress of a questionnaire for example
+-file pickers, in case we want the user to upload a file 
+-select elements in which we give to possibility to the user to choose from a list of predefined options
+- last but not least, buttons which can be of 3 kinds:submit,reset and button. Each button doing something different.
+
+What is the name attribute for?
+The name attribute serves as a reference to the data inputted into a form control after submitting it.
+I did a few examples in which we have submitted the data to "http://httpbin.org/post" and we can see that the name attribute is shown
+among the user input. We can think of it as a variable name for the input. Form input should always have a name attribute; otherwise,
+it will be ignored when the form is submitted. It`s worth mentiong that radiobuttons should have the same name, they are part of a groups
+so that when one of them gets selected the other one gets unselected.
