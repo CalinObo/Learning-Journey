@@ -21,5 +21,31 @@ What is the name attribute for?
 The name attribute serves as a reference to the data inputted into a form control after submitting it.
 I did a few examples in which we have submitted the data to "http://httpbin.org/post" and we can see that the name attribute is shown
 among the user input. We can think of it as a variable name for the input. Form input should always have a name attribute; otherwise,
-it will be ignored when the form is submitted. It`s worth mentiong that radiobuttons should have the same name, they are part of a groups
+it will be ignored when the form is submitted. It`s worth mentiong that radiobuttons should have the same name, they are part of a group
 so that when one of them gets selected the other one gets unselected.
+
+What are the three most common form controls you can use for allowing users to select predefined options?
+
+The three most common form constrols are select,radioboxes and checkboxes. The select input prompts us with a list from which we can choose 
+a predefined option, the radio button let`s use pick a choice and only one and the checkbox let`s us pick how many options we`d like.
+
+What are the three types of buttons in HTML?
+
+The three types of buttons in html are:
+-button, we can use this type to manipulate data with javascript
+-reset, we can use this type to have the data in the form reset and the user can start re-uploading the data.
+-submit, we can use this type to submit the data that has been introduced in our form.
+
+What are two most challenging aspects of styling forms?
+
+Two of the most challenging aspects of styling forms are:
+- default browser styles, each browser has it`s own default style for form controls, making forms visually different for users depending
+on what browser they are using. To have a consistent design among all browsers, we have to override these default styles and style them ourselves. 
+Hint: light reset, appearance none, etc
+
+- tricky and downright impossible to style form controls, as I have finished different lessons on this chapter I could notice how is to style
+text inputs, password, emails and how tricky it can be when it comes to radiobuttons, checkboxe, meter bars. Many of them can be styled but 
+we have to be more creative and careful when it comes to them. There are also some elements which are impossible to style such as calendar or date pickers.
+If we need to style them we have to build custom form controls with javascript or use a library.
+
+
