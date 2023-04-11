@@ -130,6 +130,15 @@ To-do:
     11:30 Daily
     11:55 Learning
     14:40 Lunch
+    15:40 Learning
+    17:30 Offline
+11/04/2023
+    09:30 Learning
+    11:30 Daily
+    12:00 Learning
+    15:10 Lunch
+    16:10 Learning
+    16:40 Commit
 
     
 
