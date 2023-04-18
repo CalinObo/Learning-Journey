@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form-validation-1.css">
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>
+                Test your skills 1
+            </legend>
+            <h3>Enter your support query</h3>
+            <div>
+                <label for="name">User name:<span aria-label="required">*</span></label>
+                <input type="text" name="name" id="name" required minlength="5" maxlength="20">
+                <span></span>
+            </div>
+            <div>
+                <label for="email">Email address:</label>
+                <input type="email" name="email" id="email" required>
+                <span></span>
+            </div>
+            <div>
+                <label for="phone">Phone number:</label>
+                <input type="number" name="phone" id="phone" maxlength="15" required>
+                <span></span>
+            </div>
+            <div>
+                <label for="comment">Comment:</label>
+                <textarea name="comment" id="comment" maxlength="200"></textarea>
+                <span></span>
+            </div>
+            <div>
+                <button>Submit comment</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>

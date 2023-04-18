@@ -150,7 +150,17 @@ To-do:
     14:30 Lunch
     15:30 Learning
     16:30 Commit
-
+    16:40 Learning
+    17:30 Offline
+18/04/2023
+    09:30 Learning
+    11:30 Daily
+    12:00 Discovery meeting
+    13:00 Learning
+    15:00 Lunch
+    16:00 Learning
+    17:05 Commit
+    18:00 Offline
     
 
     

@@ -1,0 +1,80 @@
+body {
+    background-color: #fff;
+    color: #333;
+    font: 1em /1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 1em;
+    margin: 0;
+    max-width: 500px;
+    margin: 10px auto;
+}
+
+form {
+    width: 500px;
+}
+
+div {
+    display: flex;
+    margin: 30px 0px;
+}
+
+button,
+label,
+input[type="text"],
+textarea,h3 {
+    display: block;
+    font-family: inherit;
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 5px;
+    height: 30px;
+}
+
+button {
+    height: initial;
+    margin: 0 auto;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+input,
+textarea {
+    width: 100%;
+}
+label{
+    width:40%;
+}
+
+legend{
+    color: white;
+    background-color: black;
+    padding: 5px;
+}
+
+input+span{
+    position: relative;
+}
+input:required+span::after{
+    font-size:0.7em;
+    position: absolute;
+    content:"required";
+    color:white;
+    background-color: black;
+    padding:5px 10px;
+    top:-28px;
+    left:-70px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+input[type="number"]{
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
