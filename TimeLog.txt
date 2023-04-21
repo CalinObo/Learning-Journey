@@ -161,6 +161,32 @@ To-do:
     16:00 Learning
     17:05 Commit
     18:00 Offline
+19/04/2023
+    08:30 Learning
+    11:30 Daily
+    12:00 Discovers meeting
+    13:00 Lunch
+    14:00 Learning
+    15:00 Global Engineering
+    16:00 Discovers meeting
+    17:00 Offline
+20/04/2023
+    08:30 Learning
+    11:00 Discovers meeting
+    13:00 Task
+    13:15 Lunch
+    14:15 Learning
+    15:00 Task
+    15:30 Learning
+    16:30 Offline
+    20:00 Learning
+    00:00 Offline
+21/04/2023
+    09:30 Learning
+    11:30 Daily
+    12:00 Discovers meeting
+    
+
     
 
     
