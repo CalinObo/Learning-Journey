@@ -1,0 +1,25 @@
+What does the required validation do?
+
+It tells us that the input is required, to ensure a good user experience and to meet acessibility guidelines,
+we sould always indicate which fields are required. This will often be done by adding an asterisk(*) to the required field
+label like we have done in the examples throughout the chapter.
+
+What validations can you use for checking text length?
+
+We can use the minlength or maxlength attribute with an integer value that represents the minimum amount or maximum
+amount of charachters we want to allow in the form control.
+
+How can you validate the minimum and maximum of numeric inputs?
+
+The same way we do for checking text length only that instead of minlength/maxlength we use min/max attributes.
+
+What can you use the pattern validation for?
+
+We use pattern validation in order to ensure we get the correct information from users, we will often want to ensure data matches a particular pattern.
+Real-world applicatons would be checking if a credit car number or a zip code is in the correct format.
+We can use it for many things, one example would be to have a phone number entered in different methods, such as 1231231234/123 123 1234/123-123-1234/123/123/1234.
+Regex is the way.
+
+What pseudo CSS selectors are available for styling valid and invalid inputs?
+
+We can use :valid or :invalid. We have examples of using these selectors in the form example.
