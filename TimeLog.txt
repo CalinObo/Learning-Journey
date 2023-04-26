@@ -196,6 +196,21 @@ To-do:
     11:30 Daily
     12:00 Learning
     14:30 Commit
+    15:30 Lunch
+    16:30 Learning
+    17:30 Offline
+25/04/2023
+    09:30 Learning
+    11:30 Daily
+    12:00 Learning
+    14:00 Bill meeting
+    15:00 Lunch
+    16:00 Learning
+    17:30 Offline
+26/04/2023
+    09:30 Learning
+    11:30 Daily
+
 
 
     
