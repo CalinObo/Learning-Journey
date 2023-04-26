@@ -210,6 +210,10 @@ To-do:
 26/04/2023
     09:30 Learning
     11:30 Daily
+    12:20 Learning
+    15:00 Lunch
+    17:10 Commit
+    17:40 Offline
 
 
 
