@@ -232,6 +232,9 @@ To-do:
     15:10 Learning
     17:30 Commit 
     17:40 Offline
+    21:30 Learning
+    22:10 Commit
+    
 
     
 

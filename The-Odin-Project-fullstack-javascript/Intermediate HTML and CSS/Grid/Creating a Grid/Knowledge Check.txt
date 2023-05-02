@@ -1,0 +1,29 @@
+How does an HTML element become a grid item?
+
+In CSS, an element is turned into a grid container with the property display: grid or display: inline-grid.
+In the example we`ve done, the parent element marked class="container" becomes a grid container and each of the 
+direct child eleemnts below it automatically become grid items.
+
+What is the space between lines on the grid?
+
+The space between lines on the grid is called grid item.
+
+How do you set gutters (also known as alleys) in the grid?
+
+The gap between grid rows and columns is known as the gutter or alley. Gap sizes can be adjusted separately
+for rows and column using the column-gap and row-gap properties. Furthermore, we can use a shorthand property
+called gap to set both row-gap and column-gap.
+
+Describe what happens when you have more content than defined tracks.
+
+The items that are added in our grid and for which we have not defined the row or the column, will be slotted into a new row.
+This is because of the implicit grid concept and it`s how CSS grid is able to automatically place grid items
+when we haven`t explicitly defined the layout for them.
+
+How could you change the size for those undefined tracks?
+
+We can set the implicit grid track sizes using the grid-auto-rows and grid-auto column properties.
+In this way we can ensure any new tracks the implicit grid makes for extra content are set at values that we defined.
+
+
+
