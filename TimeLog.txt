@@ -1,6 +1,5 @@
 To-do:
 -Put basic form and postcard in portofolio
--Left at: We`ve directly selected the inputs
 17/03/2023
     09:30 Started Learning
     11:30 12:00 Daily
@@ -228,6 +227,11 @@ To-do:
     09:30 Learning
     11:30 Daily
     12:00 Learning
+    14:00 Commit
+    14:10 Lunch
+    15:10 Learning
+    17:30 Commit 
+    17:40 Offline
 
     
 
