@@ -64,6 +64,15 @@ To-do:
     14:15 Lunch
     15:00 Learning
     17:30 Offline
+28/03/2023
+    09:30 Started Learning
+    11:30 Daily 
+    12:45 Learning
+    13:30 Task
+    14:30 Lunch
+    15:30 Learning
+    15:50 Pull request
+    17:30 Offline    
 29/03/2023
     09:30 Learning
     11:00 Task
@@ -239,10 +248,28 @@ To-do:
     11:30 Daily
     12:00 Task
     13:15 Learning
+    15:00 Meeting
+    16:00 Learning
+    17:30 Offline
+04/05/2023
+    09:30 Learning
+    11:30 Daily
+    12:10 Learning
+    15:10 Commit
+    15:15 Lunch
+    16:30 Meeting
+    17:00 Learning
+    17:30 Offline
+05/05/2023
+    08:30 Learning
+    11:30 Daily
+    12:00 Learning
+    13:00 Lunch
+    14:00 Learning
+    16:30 Commit
+    16:40 Offline
     
     
 
-    
 
-    
 
