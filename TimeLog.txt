@@ -268,6 +268,22 @@ To-do:
     14:00 Learning
     16:30 Commit
     16:40 Offline
+08/05/2023
+    09:30 Learning
+    11:30 Daily
+    12:00 Learning
+    14:00 Lunch
+    15:00 Learning
+    15:30 Offline
+    18:30 Learning
+    20:30 Offline
+09/05/2023
+    09:30 Learning
+    11:30 Daily
+    12:00 CMS Issue
+    12:30 Learning
+    13:30 Meeting Grow
+
     
     
 
