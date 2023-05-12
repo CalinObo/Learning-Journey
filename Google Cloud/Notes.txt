@@ -1,0 +1,7 @@
+qwiklabs-gcp-02-44355b704b55
+qwiklabs-gcp-00-279e9bd0729c
+
+10.128.0.2 internal
+35.239.7.117 external
+
+34.70.149.41 sql

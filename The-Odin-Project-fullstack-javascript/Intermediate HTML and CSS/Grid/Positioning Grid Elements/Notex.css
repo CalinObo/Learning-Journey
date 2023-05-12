@@ -195,6 +195,149 @@ which is probably what you want to do in most cases, it`s recommended to use the
 }
 
 /* Example */
-.container{
-    grid-template-columns:none;
+.container {
+    grid-template-columns: 100px 50px 100px;
+    grid-template-rows: 80px auto 80px;
+    gap: 15px 10px;
 }
+
+/* If no row-gap is specified, it`s set to the same values as column-gap,
+
+Note: The grid-prefix is deprecated (but who knows, may never actaully be removed from browsers). Essentially
+grid-gap renamed to gap. The unprefixed property is already supported in Chrome 68+, Safari 11.2 Release 50+, and Opera 54+*/
+
+/* justify-items 
+
+Aligns grid items along the inline(row) axis (as opposed to align-items which aligns along the block (column) axis).
+This value applies to all grid items inside the cointainer.
+Values:
+-start- align items to be flush with the start edge of their cell
+-end- aligns items to be flush with the end edge of their cell
+-center-aligns items in the center of their cell
+-stretch- fills the whole width of the cell(this is the default)
+*/
+
+.container {
+    justify-items: 'start|end|center|stretch';
+}
+
+/* Examples */
+.container {
+    justify-items: start;
+}
+
+.container {
+    justify-items: end;
+}
+
+.container {
+    justify-items: center;
+}
+
+.container {
+    justify-items: stretch;
+}
+
+/* This behavior can also be set on individual grid items via the justify-self property */
+
+/* align-items
+
+Aligns grid items along the block (column) axis (as opposed to justify-items which aligns along the inline (row) axis).
+This value applies to all grid items inside the container.
+
+Values:
+-stretch - fills the whole height of the cell (this is the default)
+-start - aligns items to be flush with the start edge of their cell
+-end - aligns items to be flush with the end edge of their cell
+-center - aligns items in the center of their cell
+-baseline - align items along text baseline. There are modifiers to baseline- first baseline and last baseline
+which will use the baseline from the first or last line the case of multi-lin text
+*/
+
+.container {
+    align-items: start;
+    align-items: end;
+    align-items: center;
+    align-items: stretch;
+    align-items: baseline;
+}
+
+/* This behavior can also be ste on individual grid items via the align-self property.
+There are also modifier keywords safe and unsafe(usage is like align-items: safe end). The safe keyword means "try to align like this
+, but not if it means aligning an item such that it moves into inaccessible overflow area", while unsafe will allow moving content into
+inaccessible area("data loss") */
+
+/* place-items 
+
+place items sets both the align-items and justify-items properties in a single declaration.
+Values:
+<align-items>/<justify-items> - The first value sets align-items, the second value justify-items. If the second value
+is omitted, the first valuea is assigned to both properties.
+
+This can be very useful for super quick multi-directional centering:
+*/
+.center {
+    display: grid;
+    place-items: center;
+}
+
+/* justify-content 
+Sometimes the total size of your grid might be less than the size of its grid container. This could happen if all of 
+your grid items are sized with non-flexible units like px. In this case you can set the alignment of the grid within the grid container.
+This property aligns the grid along the inline(row) axis (as opposed to align-content) which aligns the grid along the block(column) axis.
+Values:
+
+-start-aligns the grid to be flush with the start edge of the grid container
+-end-aligns the grid to be flush with the end edge of the grid container
+-center-aligns the grid in the center of the grid container
+-stretch- resizes the grid items to allow the grid to fill the full width of the grid container
+-space-around- places an even amount of space between each grid item, with no space at the far ends
+-space-between - places an even amount of space between each grid item, with no space at the far ends
+-space-evenly - places an even amount of space between each grid items, including the far ends
+*/
+
+.container {
+    justify-content: start;
+    justify-content: end;
+    justify-content: center;
+    justify-content: stretch;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;
+}
+
+/* align-content 
+
+Sometimes the total size of your grid might be less than the size of it`s grid container.
+This could happen if all of your grid items are sized with non-flexbile units like px.
+In this case you can set the alignemnt of the grid within the grid container.
+This property aligns the grid along block(column) axis ( as opposed to justify-content) which aligns the grid along the inline(row) axis).
+
+Values: 
+-start- aligns the grid to be flush with the start edge of the grid cointainer
+-end- aligns the grid to be flush with the end edge of the grid container.
+-center- aligns the grid in the center of the grid container
+-space-around- places an even amount of space between each grid item, with half-sized spaces on the far ends.
+-space-between- places an even amount of space between each grid item,  with no space at the far ends
+-space-evenly- places an even amount of space between each grid item, including the far ends.
+*/
+
+.container {
+    align-content: start;
+    align-content: end;
+    align-content: center;
+    align-content: stretch;
+    align-content: space-around;
+    align-content: space-between;
+    align-content: space-evenly;
+}
+
+/* place-content
+
+place-content sets both the align-content and justify-content properties in a single declaration
+
+Values:
+<align-content>/<justify-content> The first value sets align-content, the second value justify-content.
+If the second value is omitted, the first value is assigned to both properties.
+All major browsers except Edge support the place-content shorthand property.
+*/
