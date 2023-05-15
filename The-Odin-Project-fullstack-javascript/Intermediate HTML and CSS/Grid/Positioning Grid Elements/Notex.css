@@ -508,3 +508,38 @@ and track sizes inline with their respective grid areas. This is easiest to desc
     grid-template-rows:[row1-start] 1fr [row1-end row2-start] 25px [row2-end];
     grid-template-columns:auto 50px auto;
 }
+
+/* Properties for the Children (Grid Items) */
+
+/* grid-column-start, grid-column-end, grid-row-start,grid-row-end
+
+Determines a grid item`s location within the grid by referring to specific grid lines. grid-column-start/grid-row-start is the line where the
+item begins and grid-column-end/grid-row-end is the line where the item ends.
+
+Values:
+
+<line>- can be a number to refer to a numbered grid line, or a name to refer to a named grid line.
+span <number> - the item will span across the provided number of grid tracks.
+span <name> - the item will span across until it hits the next line with the provided name
+auto - indicates auto-placement, an automatic span, or a default span of one
+
+*/
+.item{
+    grid-column-start:"<number>|<name>| span <number>| span <name>|auto";
+    grid-column-end:"<number>|<name>| span <number>| span <name>|auto";
+    grid-row-start:"<number>|<name>| span <number>| span <name>|auto";
+    grid-row-end:"<number>|<name>| span <number>| span <name>|auto";
+}
+
+/* Examples: */
+
+.item-a{
+    grid-column-start:2;
+    grid-column-end:five;
+    grid-row-start:row1-start;
+    grid-row-end:3;
+}
+.item-b{
+    grid-column-start:1;
+    grid-column-end:span col4-start;
+}

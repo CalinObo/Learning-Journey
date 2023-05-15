@@ -305,6 +305,8 @@ To-do:
     08:30 Learning
     11:30 Daily
     11:45 Learning
+    15:30 Discover Meeting
+    16:10 Commit
 
 
     
