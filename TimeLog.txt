@@ -299,6 +299,13 @@ To-do:
     11:30 Daily
     12:15 Google Lab
     13:30 Lunch
+    14:30 Learning
+    17:30 Offline
+05/15/2023
+    08:30 Learning
+    11:30 Daily
+    11:45 Learning
+
 
     
     

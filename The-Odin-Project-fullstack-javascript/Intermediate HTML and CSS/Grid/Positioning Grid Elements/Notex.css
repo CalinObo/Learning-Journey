@@ -341,3 +341,170 @@ Values:
 If the second value is omitted, the first value is assigned to both properties.
 All major browsers except Edge support the place-content shorthand property.
 */
+
+/* grid-auto-columns/ grid-auto-rows 
+
+Specifies the size of any auto-generated grid tracks (aka implicit grid tracks). Implicit tracks get created when there are more grid items than cells
+in the grid or when a grid item is placed outside of the explicit grid.
+
+Values:
+<track-size> can be a length, a percentage, or a fraction of the free space in the grid (using the fr unit)
+*/
+.container{
+    grid-auto-columns:"<track-size> ...";
+    grid-auto-rows:"<track-size> ...";
+}
+
+/* To illustrate how implicit grid tracks get created, think about this: */
+
+.container{
+    grid-template-columns: 60px 60px;
+    grid-auto-rows:90px 90px;
+}
+/* This creates a 2x2 grid.
+But now imagine you use grid-column and grid-row to position your grid items like this: */
+
+.item-a{
+    grid-column:1/2;
+    grid-row:2/3;
+}
+.item-b{
+    grid-column:5/6;
+    grid-row:2/3;
+}
+
+/* We told .item-b to start on column line 5 and end at column line 6, but we never defined a column line 5 or 6. Because we referenced
+lines that don`t exist, implicit tracks with widths of 0 are created to fill in the gaps. We can use grid-auto-columns and grid-auto-rows
+to specify the widths of these implicit tracks: */
+
+.container{
+    grid-auto-columns:60px;
+}
+
+/* grid-auto-flow
+
+If you have grid items that you don`t explicitly place on the grid, the auto-placement algorithm kick in to automatically place the items.
+This property controls how the auto-placement algorithm works.
+
+Values:
+-row - tells the auto-placement algorithm to fill in each row in turn, adding new rows as necessary (default)
+-column - tells the auto-placement algorithm to fill in each column in turn, adding new columns as necessary
+-dense - tells the auto-placement algorithm to attempt to fill in holes earlier in the grid if smaller items come up later
+*/
+.container{
+    grid-auto-flow:row;
+    grid-auto-flow:column;
+    grid-auto-flow:row dense;
+    grid-auto-flow:column dense;
+}
+
+/* Note that dense only changes the visual order of your items and might cause them to appear out of order, which is bad for accessibility. 
+Examples:
+Consider this HTML:
+<section class="container">
+  <div class="item-a">item-a</div>
+  <div class="item-b">item-b</div>
+  <div class="item-c">item-c</div>
+  <div class="item-d">item-d</div>
+  <div class="item-e">item-e</div>
+</section>
+
+You define a grid with five columns and two rows, and set grid-auto-flow to row (which is also the default):
+*/
+.container{
+    display:grid;
+    grid-template-columns:60px 60px 60px 60px 60px;
+    grid-template-rows: 30px 30px;
+    grid-auto-flow:row;
+}
+
+/* When placing the items on the grid, you only specify spots for two of them: */
+.item-a{
+    grid-column:1;
+    grid-row:1/3;
+}
+
+.item-e{
+    grid-column:5;
+    grid-row:1/3;
+}
+
+/* grid 
+
+A shorthand for setting all of the following properties in a single declaration: grid-template-rows, grid-template-columns, grid-template-areas,
+grid-auto-rows,grid-auto-columns and grid auto-flow.(Note: You can only specify the explicit or the implicit grid properties in a single grid declaration).
+
+Values:
+none - sets all sub-properties to their initial values.
+grid-template - works the same as the grid-template shorthand.
+grid-template-rows/[auto-flow && dense?] <grid-auto-columns>? -sets grid-template-rows to the specified value. If the auto-flow keyword is
+to the right of the slash, it sets grid-auto-flow to column. If the dense keyword is specified additionally, the auto-placement algorithm uses a
+"dense" packing algorithm. If grid-auto-columns is omitted, it is set to auto.
+[auto-flow && dense?] <grid-auto-rows>?/grid-template-columns> - sets grid-template-columns to the specified value. If the auto-flow keyword is
+to the left of the slash, it sets grid-auto-flow to row. If the dense keyword is specified additionally, the auto-placement algorithm uses a "dense"
+packing algorithm. If grid-auto-rows is omitted, it is set to auto.
+
+Examples:
+
+The following two code blocks are equivalent:
+*/
+
+.container{
+    grid:100px 300px/ 3fr 1fr;
+}
+.container{
+    grid-template-rows:100px 300px;
+    grid-template-columns:3fr 1fr;
+}
+
+/* The following two code blocks are equivalent: */
+
+.container{
+    grid: auto-flow / 200px 1fr;
+}
+
+.container{
+    grid-auto-flow:row;
+    grid-template-columns:200px 1fr;
+}
+/* The following two code blocks are equivalent: */
+
+.container{
+    grid:auto-flow dense 100px/1fr 2fr;
+}
+
+.container{
+    grid-auto-flow:row dense;
+    grid-auto-rows:100px;
+    grid-template-columns:1fr 2fr;
+}
+
+/* The following two code blocks are equivalent: */
+
+.container{
+    grid:100px 300px / auto-flow 200px;
+}
+
+.container{
+    grid-template-rows:100px 300px;
+    grid-auto-flow:column;
+    grid-auto-columns:200px;
+}
+/* It also accepts a more complex but quite handy syntax for setting everything at once. You specify grid-template-areas, grid-template-rows
+and grid-template-columns, and all the other sub-properties are set to their initial values. What you`re doing is specifying the line names
+and track sizes inline with their respective grid areas. This is easiest to describe with an example. */
+
+.container{
+    grid:[row1-start] "header header header" 1fr [row1-end]
+         [row2-start] "footer footer footer" 25px [row2-end]
+         /auto 50px auto;
+}
+/* That`s equivalent to this: */
+
+.container{
+    grid-template-areas:
+    "header header header"
+    "footer footer footer";
+    grid-template-rows:[row1-start] 1fr [row1-end row2-start] 25px [row2-end];
+    grid-template-columns:auto 50px auto;
+}
