@@ -542,4 +542,258 @@ auto - indicates auto-placement, an automatic span, or a default span of one
 .item-b{
     grid-column-start:1;
     grid-column-end:span col4-start;
+    grid-row-start:2;
+    grid-row-end:span 2;
 }
+
+/* If no grid-column-end/grid-row-end is declared, the item will span 1 track by default. 
+    Items can overlap each other. You can use z-index to control their stacking order.
+*/
+
+/* grid-column, grid-row
+
+Shorthand for grid-column-start + grid-column-end, and grid-row-start + grid-row-end, respectively.
+
+Values:
+<start-line>/<end-line> - each one accepts all the same values as the longhand version, including span
+*/
+
+.item{
+    grid-column:"<start-line>/<end-line> || <start-line>/span <value>";
+    grid-row:"<start-line>/<end-line> || <start-line>/span <value>"
+}
+
+/* Example */
+
+.item-c{
+    grid-column:3/ span 2;
+    grid-row:third-line/4;
+}
+
+/* If no end line value is declared, the item will span 1 track by default */
+
+/* Grid-area 
+
+Gives an item a name so that it can be referenced by a template created with the grid-template-areas property.
+Alternatively, this property can be used as an even shorter shorthand for grid-row-start + grid-column-start + grid-row-end + grid-column-end.
+
+Values:
+
+<name> - a name of your choosing
+<row-start> / <column-start> / <row-end> / <column-end> can be numbers or named lines
+*/
+
+.item{
+    grid-area:"<name>| <row-start>/<column-start>/<row-end>/<column-end>;"
+}
+
+/* Examples: As a way to assign a name to the item: */
+
+.item-d{
+    grid-area:header;
+}
+
+/* As the short-shorthand for grid-row-start + grid-column-start + grid-row-end + grid-column-end: */
+
+.item-d{
+    grid-area:1/col4-start/last-line/6;
+}
+
+/* justify-self
+
+Aligns a grid item inside a cell along the inline (row) axis (as opposed to align-self which aligns along the block (column) axis).
+This value applies to a grid item inside a single cell.
+
+Values:
+start - aligns the grid item to be flush with the start edge of the cell
+end - aligns the grid items to be flush with the end edge of the cell
+center - aligns the grid item in the center of the cell
+stretch - fills the whole width of the cell (this is the default)
+*/
+
+.item{
+    justify-self: "start|end|center|stretch";
+}
+
+/* Examples: */
+
+.item-a{
+    justify-self: start;
+}
+.item-a{
+    justify-self:end;
+}
+.item-a{
+    justify-self: center;
+}
+.item-a{
+    justify-self: stretch;
+}
+
+/* To set alignment for all the items in a grid, this behavior can also be set on the grid container via the justify-items property. */
+
+/* align-self
+
+Aligns a grid item inside a cell along the block (column) axis (as opposed to justify-slef which aligns along the inline(row) axis).
+This value applies to the content inside a single grid item.
+
+Values:
+
+start-aligns the grid item to be flush with the start edge of the cell
+end- aligns the grid item to be flush with the end edge of the cell
+center- aligns the grid item in the center of the cell
+stretch- fill the whole height of the cell (this is the default)
+*/
+
+.item{
+    align-self: "start|end|center|stretch";
+}
+
+/* Examples */
+
+.item-a{
+    align-self: start;
+}
+
+.item-a{
+    align-self:end;
+}
+
+.item-a{
+    align-self:center;
+}
+
+.item-a{
+    align-self:stretch;
+}
+
+/* To align all the items in a grid, this behavior can be also set on the grid container via the align-items property. */
+
+/* place-self
+
+place-self sets both the align-self and justify-self properties in a single declaration.
+
+Values:
+auto- the default alignment for the layout mode.
+<align-self>/<justify-self> - The first value sets align-self, the second value justify-self. If the second value is omitted, 
+the first value is assigned to both properties.
+
+Examples:
+*/
+.item-a {
+    place-self:center;
+}
+.item-a{
+    place-self:center stretch;
+}
+
+/* All major browsers except Edge support the place-self shorthand property. */
+
+/* Special units & Functions
+
+fr units
+
+You`ll likely end up using a lot of fractional units in CSS Grid, like 1 fr. They essentially mean "portion of the remaining space".
+So a declaration like:*/
+
+
+.container{
+    grid-template-columns:1fr 3fr;
+}
+
+/*  Means, loosely, 25% 75%. Except that those percentage values are much more firm than fractional units are. For example, if you added
+padding to those percentage-based columns, now you`ve broken 100% width(assuming a content-box box model). Fractional units are also much more 
+friendly in combination with other units, as you can imagine: */
+.container{
+    grid-template-columns:50px min-content 1fr;
+}
+
+/* Sizing keywords */
+
+/* When sizing rows and columns, you can use all the lengths you are used to, like px, rem, %, etc, but you also have keywords:
+min-content:the minimum size of the content. Imagine a line of text like "E pluribus unum", the min-content is likely the width of the word "pluribus".
+max-content:the maximum size of the content. Imagine the sentence above, the max-content is the length of the whole sentence.
+auto:this keyword is a lot like fr units, except that they "lose" the fight in sizing against fr units when allocating the remaining space.
+Fractional units: see above.
+*/
+
+/* Sizing Functions 
+
+The fit-content(function) uses the space available, but never less than min-content and never more than max-content.
+The minmax() function does exactly what it seems like: it sets a minimum and maximum value for what the length is able to be. This is useful
+for in combination with relative units. Like you may want a column to be only able to shrink so far. This is extremely useful and probably what you want:
+*/
+
+.container{
+    grid-template-columns: minmax(100px,1fr) 3fr;
+}
+
+/* The min() function.
+   The max() function. */
+
+/* The repeat() function and keywords 
+
+The repeat() function can save some typing*/
+
+.container{
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    /* easier: */
+
+    grid-template-columns: repeat(8,1fr);
+    /* especially when: */
+    grid-template-columns: repeat(8,minmax(10px,1fr));
+}
+
+/* But repeat () can get extra fancy when combined with keyword:
+    auto-fill:Fit as many possible columns as possible on a row, even if they are empty.
+    auto-fit: Fit whatever columns there are into the space. Prefer expanding columns to fill space rather than empty columns.
+
+    This bears the most famous snippet in all of CSS Grid and one of the all-time great CSS tricks:
+*/
+.container{
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+
+/* Masonry 
+
+An experimental feature of CSS grid is masonry layout. Note that there are lots of approaches to CSS masonry, but mostly of them
+are trickery and either have major* downsides or aren`t what you quite expect.*/
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: masonry;
+}
+
+/* Subgrid 
+
+Subgrig is an extremely useful feature of grids that allows grid item to have a grid of their own that inherits grid lines from the parent grid.*/
+.parent-grid{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+}
+.grid-item{
+    grid-column:2/7;
+    display: grid;
+    grid-template-columns: subgrid;
+}
+.child-of-grid-item{
+    /* get to participate on parent grid */
+    grid-column:3/6
+}
+
+/*  This is only support in Firefox right now, but it really need to get everywhere.
+It`s also useful to know about display:contents;. This is not the same as subgrid, but it can be a useful tool sometimes in a similar fashion */
+/* <div class="grid-parent">
+
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+
+  <ul style="display: contents;">
+    <!-- These grid-items get to participate on 
+         the same grid!-->
+    <li class="grid-item"></li>
+    <li class="grid-item"></li>
+  </ul>
+
+</div> */
