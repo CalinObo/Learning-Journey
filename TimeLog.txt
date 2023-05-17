@@ -322,6 +322,9 @@ To-do:
     11:30 Daily
     12:00 Learning
     13:45 Commit
+    13:50 Learning
+    15:05 Engineering meeting
+    16:00 Lunch
 
 
 
