@@ -325,7 +325,13 @@ To-do:
     13:50 Learning
     15:05 Engineering meeting
     16:00 Lunch
-
+    17:00 Learning
+    17:45 Commit
+    17:50 Offline
+18/05/2023
+    09:30 Learning
+    11:30 Daily
+    12:00 Learning
 
 
     
