@@ -1,0 +1,53 @@
+How do you create several grid tracks of the same size without manually typing each one out?
+
+We can use the repeat() function. It`s a css functin available to the css Grid template properties 
+that allows us to define a number of rows or columns and the size we want them to be without having
+to manually type out each individual track`s size.
+
+What is the difference between a static and a dynamic size value?
+
+Dynamic, in this context, simply means "flexible" or "responsive in some way". The opposite of dynamic
+is static, or fixed at a certain defined height, like 150px, which we used in the setup of the sample grid.
+The most basic way to make our grid items dynamic is by using fractional units, also known as fr.
+
+How can you assing a grid track a flexible value that changes depending on the remaining space available in the grid?
+
+The most basic way to make our grid items dynamic is by using fractional units, also known as fr.
+The fr unit is a way of distributing whatever remaining space is left in the grid. For example, if we have a four-column grid
+with a total width of 400px and four grid items each on a column track assigned 1 fr as their size, all of the grid items should
+be given one fraction of that 400px of space, which is 100 pixels.
+
+How can you assign grid tracks an eneven distribution of the remaining space in a grid?
+
+We can also tell out grid items to distribute the remaining space disproportionately. For example, if we divide the 5 columns up
+by giving the first two a track size of 2 fr and the remaining three a track size of 1fr, the first two tracks will be given twice
+as much remaining space as the others. The key here is that the first two columns are assigned 2fr units and the remaining three are 
+assigned 1fr. This means that as the grid grows and shrinks dynamically, the space will be distributed in different amounts between 
+these column, specifically, twice as many pixels to the first two column as the remaining three.
+
+Which CSS functions will return the smallest or largest value applied to them?
+
+The css functions which will return the smallest or largest value supplied to them is min() or max().
+
+Which CSS Grid-only function allows you to supply a minimum and maximum track size that is calculated in realtime?
+
+The CSS Grid-only function that allows us to supply a minimum and maximum track size that is calculated in realtime is minmax().
+
+Which global CSS function allows you to supply a minimum, ideal, and maxim value that is calculated in realtime?
+
+The global CSS function is clamp()
+
+What attribute of repeat() can be used to fill in as many grid tracks as possible, given certain constraints?
+
+According to the W3 specification on auto-fill and auto-fit, both of these functions will return "the largest possible positive integer" without
+the grid items overflowin their container.
+
+What is the difference between auto-fit and auto-fill?
+
+In most cases, auto-fill is going to work exactly the same way as auto-fit. The difference is only noticeable when there are fewer items that can
+fill up the entirety of the grid row once. When the grid is expanded to a size where another grid item could fit, but there aren`t any left, auto-fit
+will keep the grid items as their max size. Using auto-fill, the grid item will snap back down to their min size once the space becomes available to add 
+another grid item, even if there isn`t one to be rendered. They will continue their pattern of growing to max and snapping back to their min as the grid 
+expands and more room becomes available for new grid tracks.
+
+
