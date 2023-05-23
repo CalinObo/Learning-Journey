@@ -1,0 +1,31 @@
+.layout{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+    margin-bottom: 10px;
+}
+.child{
+    min-height: 100px;
+    background: pink;
+}
+
+.layout2{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:8px;
+}
+.child2{
+    background-color: orange;
+    text-align: center;
+    padding:25px;
+    display:flex;
+    justify-content: space-between;
+}
+.last-row{
+    grid-column:1/3;
+}
+.child2>div{
+    height:50px;
+    background-color: darkred;
+    flex:0 1 30%;
+}
