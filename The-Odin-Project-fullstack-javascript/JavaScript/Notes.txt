@@ -1,0 +1,11 @@
+All of the following values are falsy:
+false
+null
+undefined
+0
+-0
+NaN
+An empty string('')
+
+The first operator we explore is the Equal to (==) operator. It checks if two values are equal. For example
+2==2. Comparison operators always return a boolean value. In this case we got true.

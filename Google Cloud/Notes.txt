@@ -5,3 +5,5 @@ qwiklabs-gcp-00-279e9bd0729c
 35.239.7.117 external
 
 34.70.149.41 sql
+
+ACE03-GETCERT/2023.05.24

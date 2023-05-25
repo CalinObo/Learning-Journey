@@ -359,6 +359,20 @@ To-do:
     15:40 Buddy meeting
     16:30 Learning
     17:00 Commit
+    17:30 Offline
+24/05/2023
+    09:30 Learning
+    11:30 Daily
+    12:00 Learning
+    13:00 Google Cloud
+    14:15 Meeting
+    16:20 Lunch
+    17:30 Offline
+25/05/2023
+    09:30 Learning
+    13:30 Planning
+    14:30 Lunch
+    15:30 Learning
 
 
 
