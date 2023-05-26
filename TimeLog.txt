@@ -373,6 +373,12 @@ To-do:
     13:30 Planning
     14:30 Lunch
     15:30 Learning
+    17:50 Commit
+    18:00 Offline
+26/05/2023
+    09:30 Office Day
+    17:30 Offline
+
 
 
 
