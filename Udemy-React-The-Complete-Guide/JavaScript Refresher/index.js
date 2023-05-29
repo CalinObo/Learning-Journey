@@ -1,62 +1,39 @@
-// const myName= "calin";
-var myName= "calin";
-console.log(myName);
+// class Human {
+//   gender = "male";
 
-myName="Iulian";
-console.log(myName);
+//   printGender = () => {
+//     console.log(this.gender);
+//   }
+// }
+// class Person extends Human {
+//   name = "Calin";
+//   gender = "female";
 
-//Arrow functions
-
-// function myFnc(){
-    //...
-// } 
-// is the same as
-// const myFnc=() => {
-    //...
+//   printMyName = () => {
+//     console.log(this.name);
+//   };
 // }
 
-function printMyName(name){
-    console.log(name);
-}
+// const person = new Person();
+// person.printMyName();
+// person.printGender();
 
-printMyName("Calin")
+const numbers=[1,2,3];
+const newNumbers=[...numbers,4,5];
 
-const printMyName2=(name,age)=>{
-    console.log(name,age);
-}
-printMyName2("Calin2",25)
+console.log(newNumbers);
 
-const multiply=(number) =>{
-    return number*2;
-}
-
-console.log(multiply(2))
-
-//Exports & Imports
-
-//person.js
 const person={
-    name:'Max'
+    name:'Calin'
+};
+
+const newPerson={
+    ...person,
+    age:25
 }
-export default person
+console.log(newPerson);
 
-//utility.js
-export const clean=() => { a }
-export const baseDate=10;
-
-//app.js
-import person from './person.js'
-import prs from './person.js'
-
-//When we have export default in one file, we can import the export and name it as we wish
-//When we have export a function, or a variable, we need to import it using {} and the actual name of the exported thing
-
-import {baseDate} from '/utility.js'
-import {clean} from '/utility.js'
-
-//When we have export a function, or a variable we can rename it using the word as 
-import {baseDate as base} from '.utility.js'
-
-//If we want to import everything we can use * and use them as bundled.data bundled.clean
-import * as bundled from './utility.js'
- asd
+const filter = (...args) =>{
+    return args.filter(el => el === 1);
+}
+console.log(filter(1,2,3,4))
