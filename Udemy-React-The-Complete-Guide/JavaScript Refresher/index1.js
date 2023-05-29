@@ -125,4 +125,39 @@ function sortArgs(...args){
 }
 // ...args it will merge them into an array of arguments and we can use array method on the argument list
 
+//Destructuring
+
+//Easily extract array elements or object properties and store them in variables
+// Array destructuring
+[a,b]=['Hello','Max']
+console.log(a)//Hello
+console.log(b)//Max
+// Object destructuring
+//{name}={name:'Max',age:28}
+console.log(name)//Max
+
+//Reference and primitive types
+const number=1;//primitive type boolean,strings,numbers
+const num2=number;
+
+const person2={
+    name:'Calin'
+};
+
+const secondPerson=person2; // this copies the path to the memory that stores the objects properties
+const seconPerson2={
+    ...person2              // this stores the actual object properties from the first object, we have to use the spread operator
+};
+
+person.name='Iulian';
+
+console.log(secondPerson)
+//Objects and arrays are reference types
+
+//Refresing Array Methods
+
+const numbers1=[1,2,3];
+const doubleNumArray=numbers.map((num)=>{
+    return num*2;
+});
 
