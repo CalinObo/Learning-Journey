@@ -59,3 +59,4 @@ import {baseDate as base} from '.utility.js'
 
 //If we want to import everything we can use * and use them as bundled.data bundled.clean
 import * as bundled from './utility.js'
+ asd
