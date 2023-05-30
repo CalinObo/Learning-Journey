@@ -1,0 +1,60 @@
+Name the three ways to declare a variable.
+The three ways are var, let, const.
+
+Which of three variable declarations should you avoid and why?
+We should avoid the var declaration, sometimes the behavior of var is not what you would expect.
+
+What rules should you follow when naming variables?
+
+There are two limitations on variable names in JavaScript:
+-the name must contain only letters, digits, or the symbols $ and _
+-the first character must not be a digit.
+
+When the name contains multiple words, camelCase is commonly used.
+
+What happens when you add numbers and strings together?
+
+They concatenate, here are some examples:
+'1'+2 = 12  2+'1' =21 '1' +2+2 =122
+If there are numbers in the first part of our exercise and later there`s a string, the string will be concatenated to the result of the operations before it.
+2+2+'1'= 41 
+
+How does the Modulo (%), or Remainder, operator work?
+The result of a%b is the remainder of the integer division of a by b.
+8%3=2
+10%3=1
+
+Explain the difference between == and ===.
+
+The == operator checks for the same value.
+The === operator checks for the same value and type.
+
+When would you receive a NaN result?
+
+Trying to do arithmetic with a non-numeric string will result in NaN(not a number).However, if the string is numeric, the result will be a number.
+
+How do you increment and decrement a number?
+
+We make use of the ++ and -- operator.
+
+Explain the difference between prefixing and postfixing increment/decrement operators.
+
+If we`d like to increase a value and immediately use the result of the operator, we need the prefix form.
+If we`d like to increment a value but use its previous value, we need the postfix form.
+
+What is operator precedence and how is it handled in JS?
+
+If an expression has more than one operator, the execution order is defined by their precedence, or, in other words, the default priority order of operators.
+From school, we all know that the multiplication should be calculated before the addition. That`s exactly the precedence thing. The multiplication is said to have 
+a higher precedence than the addition.
+Parentheses override any precedence, so if we`re not satisfied with the default order, we can use them to change it.
+
+How do you acces developer tools and the console?
+Inspect element => console
+
+How do you log information to the console?
+console.log();
+
+What does unary plus operator do to string represenations of integer? eg. +"10"
+Transforms it into a number, it converts string to number.
+

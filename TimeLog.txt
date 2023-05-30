@@ -387,7 +387,15 @@ To-do:
     15:30 Learning
     17:40 Commit
     18:00 Offline
-
+30/05/2023
+    09:30 Learning
+    11:30 Daily
+    12:00 Learning
+    13:00 Lunch
+    14:00 Fe Meeting
+    15:00 Task
+    15:45 Learning
+    16:30 Commit
 
 
 

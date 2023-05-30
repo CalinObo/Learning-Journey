@@ -275,7 +275,19 @@ console.log(typeof(null+1),null+1)// number 1
 console.log(typeof(undefined+1),undefined+1)//number NaN
 console.log(typeof(" \t \n" -2)," \t \n" -2)//number -2
 
-a = prompt("First number?",1);
-b = prompt("Second number?",2);
+// a = prompt("First number?",1);
+// b = prompt("Second number?",2);
 
-// alert(Number(a)+Number(b));
+// console.log(Number(a)+Number(b));
+
+console.log(23+97);
+console.log(0+1+1+2+3);
+console.log((4+6+9)/77)
+
+a=10;
+console.log(a)
+
+const max=57;
+let actual=max-13;
+let percentage=actual/max;
+console.log(percentage)
