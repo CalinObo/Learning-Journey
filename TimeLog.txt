@@ -396,6 +396,15 @@ To-do:
     15:00 Task
     15:45 Learning
     16:30 Commit
+31/05/2023
+    09:30 Learning
+    11:00 TechTalks
+    11:30 Daily
+    11:45 Learning
+01/05/2023
+    09:30 Legal Holiday
+02/05/2023
+    
 
 
 
