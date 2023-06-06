@@ -407,6 +407,23 @@ To-do:
 01/06/2023
     09:30 Legal Holiday
 02/06/2023
+    09:30 Learning
+    11:30 Daily
+    12:00 Learning
+    15:00 Lunch
+    16:00 Learning
+    17:30 Offline
+05/06/2023
+    09:30 Legal Holiday
+06/06/2023
+    09:30 Learning
+    11:30 Daily
+    12:00 Learning
+    13:30 Lunch
+    14:30 Learning
+    15:30 Task
+    16:30 Learning
+    
 
 
 
