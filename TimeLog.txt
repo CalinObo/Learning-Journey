@@ -401,10 +401,13 @@ To-do:
     11:00 TechTalks
     11:30 Daily
     11:45 Learning
-01/05/2023
+    14:25 Call Faq + Task
+    15:05 Global web Engineering
+    16:00 Lunch
+01/06/2023
     09:30 Legal Holiday
-02/05/2023
-    
+02/06/2023
+
 
 
 

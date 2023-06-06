@@ -37,3 +37,33 @@ function greet(){
 }
 
 button.addEventListener("click",greet);
+
+const greeting2="Hello";
+const name2="Calin";
+console.log(greeting2+", "+name2);
+console.log(`${greeting2}, ${name2}`);
+
+const name3 ="Calin";
+const number3=121;
+console.log(`${name3}, ${number3}`);
+
+const myString="123";
+const myNum=Number(myString);
+console.log(typeof myNum);
+
+const myNum2=123;
+const myString2=myNum2.toString();
+console.log(typeof myString2);
+
+const song ="Knife Party";
+const score=10;
+const highestScore=10;
+const output =`I like the song ${song}. I gave it a score of ${(score/highestScore)*100}%`;
+console.log(output);
+
+const output2=`I like the song.
+I gave it a score of 90%`;
+console.log(output2);
+
+const output3="I like the song.\nI gave it a score of 90%";
+console.log(output3);
