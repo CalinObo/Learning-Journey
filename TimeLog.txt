@@ -423,6 +423,8 @@ To-do:
     14:30 Learning
     15:30 Task
     16:30 Learning
+    17:30 Task
+    19:00 Offline
     
 
 
