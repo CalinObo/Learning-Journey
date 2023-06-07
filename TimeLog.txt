@@ -423,6 +423,10 @@ To-do:
     14:30 Learning
     15:30 Task
     16:30 Learning
+    17:30 Task
+    19:30 Offline
+    17:30 Task
+    19:00 Offline
 07/06/2023
     09:30 Learning
     11:30 Daily 
@@ -430,7 +434,7 @@ To-do:
     12:15 Learning
     13:30 Lunch
     14:30 Learning
-    17:15 Commit
+    17:20 Commit
     
 
 
