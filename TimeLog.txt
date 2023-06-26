@@ -444,10 +444,38 @@ To-do:
     16:30 Learning
     17:30 Offline
 09/06/2023
-    09:30 Learning
+    09:00 Learning
     11:30 Daily
     11:45 Learning
     13:20 Commit
+    13:30 Lunch
+    14:30 Learning
+    17:30 Offline
+21/06/2023
+    08:30 Learning
+    11:30 Daily
+    12:20 Learning
+    14:30 Lunch
+    15:30 Learning
+    17:00 Offline
+22/06/2023
+    08:30 Learning
+    12:30 Lunch
+    13:30 Planning 
+    15:00 Learning
+    16:30 Offline
+23/06/2023
+    08:30 Learning
+    11:30 Daily
+    12:00 Learning
+    13:00 Lunch
+    14:00 Learning
+    16:40 Offline
+26/06/2023
+    09:00 Learning
+    11:30 Daily
+    12:00 Learning
+
     
 
 

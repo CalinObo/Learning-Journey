@@ -1,0 +1,26 @@
+There are different approaches to which we could use props.
+The first approach would be to have in the app.js file multiple props with different names and pass through each value
+a different prop
+        App.js
+      <ExpenseItem
+        title={expenses[0].title}
+        amount={expenses[0].amount}
+        date={expenses[0].date}
+      >
+
+        Component.js
+        function ExpenseItem(props)
+        <h2>{props.title}</h2>
+
+The second approach would be that, instead of passing the individuals values through multiple props we could pass the entire data point.
+        App.js
+        <ExpenseItem expense={expenses[0]}></ExpenseItem>
+With this approach we also have the change the code in the  component.
+        props.expense.title
+
+The third approach is exclusive to the receiving component, we could object destructuring right in the paramater list.
+Instead of using props, we could write exactly the properties that we want to use. Also this comes with changes in the component code
+        // function ExpenseItem({date,title,amount})
+
+        <h2>{title}</h2>
+
