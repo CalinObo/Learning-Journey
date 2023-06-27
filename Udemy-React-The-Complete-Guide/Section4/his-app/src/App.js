@@ -1,5 +1,4 @@
 import Header from "./assets/Components/Header/Header";
-import concept from "./assets/Components/Concept/Concept";
 import componentsImage from "./assets/images/components.png";
 import stateImage from "./assets/images/state.png";
 import eventsImage from "./assets/images/events.png";
