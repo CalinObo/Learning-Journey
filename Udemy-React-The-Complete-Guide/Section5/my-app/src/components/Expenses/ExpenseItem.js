@@ -5,6 +5,7 @@ import ExpenseDate from "./ExpenseDate";
 
 function ExpenseItem(props) {
  const [title,setTitle] = useState(props.title);
+ console.log('ExpenseItem evaluated')
 
   const clickHandler = () => {
     setTitle('Updated');
