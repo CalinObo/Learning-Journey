@@ -486,6 +486,81 @@ To-do:
     12:00 Task
     12:45 Lunch
     13:45 Learning
+    16:35 commit
+    17:00 Offline
+28/06/2023 
+    09:00 Day Off
+29/06/2023
+    09:00 Learning
+    11:30 Daily
+    12:30 Learning
+    14:30 Lunch
+    17:00 Offline
+30/06/2023
+    09:00 Learning
+    11:30 Daily
+    12:30 Learning
+    13:30 Lunch
+    14:30 LEarning
+    17:15 Offline
+03/07/2023 
+    09:00 Learning
+    11:30 Daily
+    12:40 Learning
+    13:00 Kick-off Session
+    14:15 Learning
+    14:30 Lunch
+    15:30 Learning  
+    16:00 Task
+    18:40 Offline
+04/07/2023 
+    09:00 Learning
+    10:00 Merge
+    11:00 Learning
+    11:30 Daily
+    12:00 Task
+    12:30 Learning
+    14:30 Lunch
+    15:30 Learning
+    16:00 Offline
+05/07/2023
+    09:00 Learning
+    11:30 Daily
+    12:00 Learning
+    13:00 Lunch
+    14:00 Npm issues
+    17:00 Offline
+06/07/2023
+    09:00 Learning
+    11:00 Npm issues
+    13:30 Planning
+    14:30 Lunch
+    15:30 Learning
+    17:15 Offline
+07/07/2023 
+    09:00 Learning
+    11:30 Daily
+    12:00 Learning
+    14:00 Lunch
+    15:00 Learning
+    17:00 Offline
+07/08/2023
+    09:00 Laptop updates
+    11:30 Daily
+    12:10 Meeting github help
+    13:00 Lunch
+    14:00 Learning
+    17:00 Offline
+08/08/2023
+    09:00 Learning
+    11:30 Daily
+    12:00 Learning
+    14:00 Lunch
+    15:00 Learning
+
+
+
+
 
 
 
