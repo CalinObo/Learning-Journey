@@ -557,6 +557,14 @@ To-do:
     12:00 Learning
     14:00 Lunch
     15:00 Learning
+    17:00 Offline
+09/08/2023 
+    09:00 Learning
+    11:30 Daily
+    12:00 Learning
+    12:30 Meeting support
+    13:40 Lunch
+    14:40 Learning
 
 
 
