@@ -1,32 +1,68 @@
-import React,{useState} from 'react';
+import React, { useState } from "react";
+import styled from "styled-components";
+import Button from "../../UI/Button/Button";
 
-import Button from '../../UI/Button/Button';
-import './CourseInput.css';
+const FormControl = styled.div`
+  margin: 0.5rem 0;
 
-const CourseInput = props =>{
-    const [enteredValue, setEnteredValue] = useState('');
+  & label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
 
-    const goalInputChangedHandler = event => {
-        setEnteredValue(event.target.value);
-    };
+  & input {
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    font: inherit;
+    line-height: 1.5rem;
+    padding: 0 0.25rem;
+  }
 
-    const formSubmitHandler = event =>{
-        event.preventDefault();
-        props.onAddGoal(enteredValue);
-    };
+  & input:focus {
+    outline: none;
+    background: #fad0ec;
+    border-color: #8b005d;
+  }
 
-    return (
-        <form onSubmit={formSubmitHandler}>
-            <div className="form-control">
-                <label>Course Goal</label>
-                <input type="text" onChange={goalInputChangedHandler} />
-            </div>
-            <Button type="submit">Add Goal</Button>
-        </form>
-    );
+  &.invalid input {
+    border-color: red;
+    background-color: #ffd7d7;
+  }
+  &.invalid label {
+    color: red;
+  }
+`;
+const CourseInput = (props) => {
+  const [enteredValue, setEnteredValue] = useState("");
+  const [isValid, setIsValid] = useState(true);
+
+  const goalInputChangedHandler = (event) => {
+    if (event.target.value.trim().length > 0) {
+      setIsValid(true);
+    }
+    setEnteredValue(event.target.value);
+  };
+
+  const formSubmitHandler = (event) => {
+    event.preventDefault();
+    if (enteredValue.trim().length === 0) {
+      setIsValid(false);
+      return;
+    }
+    props.onAddGoal(enteredValue);
+  };
+
+  return (
+    <form onSubmit={formSubmitHandler}>
+      <FormControl className={!isValid && "invalid"}>
+        <label>Course Goal</label>
+        <input type="text" onChange={goalInputChangedHandler} />
+      </FormControl>
+      <Button type="submit">Add Goal</Button>
+    </form>
+  );
 };
-
-
-
 
 export default CourseInput;
