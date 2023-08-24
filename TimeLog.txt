@@ -624,6 +624,23 @@ To-do:
     13:00 Lunch
     14:00 Fe BlindSpot
     15:00 Learning
+    18:00 Offline
+23/07/2023 
+    09:00 Learning
+    10:00 Demo
+    12:00 Learning
+    13:30 Lunch
+    14:30 Learning
+    15:00 Task
+    18:00 Offline
+24/07/2023
+    09:00 Learning
+    11:30 Daily
+    12:30 Learning
+    13:00 Lunch
+    14:00 Learning
+
+
 
 
 
