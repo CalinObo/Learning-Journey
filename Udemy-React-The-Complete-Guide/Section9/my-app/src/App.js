@@ -38,31 +38,20 @@ function App() {
         textCalin="Investment Calculator"
       />
 
-      <form className="form">
-        <UserInput
-          htmlForCal="current-savings"
-          text="Current Savings"
-          typeCal="number"
-          HtmlForCal2="yearly-contribution"
-          text2="Yearly Savings ($)"
-          typeCal2="number"
-          HtmlForCal3="expected-return"
-          text3="Expected Interest (%, per year)"
-          typeCal3="number"
-          HtmlForCal4="duration"
-          text4="Investment Duration (years)"
-          typeCal4="number"
-        />
-
-        <p className="actions">
-          <button type="reset" className="buttonAlt">
-            Reset
-          </button>
-          <button type="submit" className="button">
-            Calculate
-          </button>
-        </p>
-      </form>
+      <UserInput
+        htmlForCal="current-savings"
+        text="Current Savings"
+        typeCal="number"
+        HtmlForCal2="yearly-contribution"
+        text2="Yearly Savings ($)"
+        typeCal2="number"
+        HtmlForCal3="expected-return"
+        text3="Expected Interest (%, per year)"
+        typeCal3="number"
+        HtmlForCal4="duration"
+        text4="Investment Duration (years)"
+        typeCal4="number"
+      />
 
       {/* Todo: Show below table conditionally (only once result data is available) */}
       {/* Show fallback text if no data is available */}

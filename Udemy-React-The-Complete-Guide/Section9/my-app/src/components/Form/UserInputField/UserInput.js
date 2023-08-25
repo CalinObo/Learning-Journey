@@ -1,10 +1,11 @@
 import React from "react";
 import UserInputFields from "./UserInputFields";
-import styles from "./UserInput.module.css"
+import Buttons from "../Buttons/Buttons";
+import styles from "./UserInput.module.css";
 
 const UserInput = (props) => {
   return (
-    <form>
+    <form className={styles.form}>
       <div className={styles["input-group"]}>
         <UserInputFields
           htmlForCalin={props.htmlForCal}
@@ -29,6 +30,12 @@ const UserInput = (props) => {
           typeCalin={props.typeCal4}
         />
       </div>
+      <Buttons
+        buttonType="reset"
+        text="Reset"
+        buttonType2="submit"
+        text2="Calculate"
+      />
     </form>
   );
 };
