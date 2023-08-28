@@ -640,7 +640,21 @@ To-do:
     13:00 Lunch
     14:00 Learning
     17:00 Offline
-
+25/07/2023
+    09:00 Learning
+    11:30 Daily
+    12:00 Learning
+    13:30 Lunch
+    14:30 Learning
+    17:00 Offline
+28/07/2023 
+    09:00 Learning
+    11:30 Daily
+    12:00 Learning
+    13:30 Lunch
+    14:30 Learning
+    17:00 Offline
+    
 
 
 

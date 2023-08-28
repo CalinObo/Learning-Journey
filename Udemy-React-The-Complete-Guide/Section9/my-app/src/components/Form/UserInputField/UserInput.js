@@ -4,8 +4,17 @@ import Buttons from "../Buttons/Buttons";
 import styles from "./UserInput.module.css";
 
 const UserInput = (props) => {
+
+  const submitHandler= (event) =>{
+    event.preventDefault();
+    console.log("da")
+
+  };
+  const resetHandler=() =>{
+    console.log("nu")
+  };
   return (
-    <form className={styles.form}>
+    <form onSubmit={submitHandler} className={styles.form}>
       <div className={styles["input-group"]}>
         <UserInputFields
           htmlForCalin={props.htmlForCal}
@@ -33,6 +42,8 @@ const UserInput = (props) => {
       <Buttons
         buttonType="reset"
         text="Reset"
+        onClickHandler={resetHandler} // reset handler merge doar la type = reset, daca al- 2lea buton e cel de reset
+                                      // trebuie sa lift the state up pentru acesta
         buttonType2="submit"
         text2="Calculate"
       />

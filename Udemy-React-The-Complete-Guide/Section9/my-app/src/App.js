@@ -1,7 +1,9 @@
 import logo from "./assets/investment-calculator-logo.png";
+import React from "react";
+
 import Header from "./components/Header/Header";
 import UserInput from "./components/Form/UserInputField/UserInput";
-import React from "react";
+import ResultTable from "./components/ResultsTable/ResultTable";
 function App() {
   const calculateHandler = (userInput) => {
     // Should be triggered when form is submitted
@@ -52,30 +54,13 @@ function App() {
         text4="Investment Duration (years)"
         typeCal4="number"
       />
-
-      {/* Todo: Show below table conditionally (only once result data is available) */}
-      {/* Show fallback text if no data is available */}
-
-      <table className="result">
-        <thead>
-          <tr>
-            <th>Year</th>
-            <th>Total Savings</th>
-            <th>Interest (Year)</th>
-            <th>Total Interest</th>
-            <th>Invested Capital</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>YEAR NUMBER</td>
-            <td>TOTAL SAVINGS END OF YEAR</td>
-            <td>INTEREST GAINED IN YEAR</td>
-            <td>TOTAL INTEREST GAINED</td>
-            <td>TOTAL INVESTED CAPITAL</td>
-          </tr>
-        </tbody>
-      </table>
+      <ResultTable
+        text1={"Year"}
+        text2={"Total Savings"}
+        text3={"Interest (Year)"}
+        text4={"Total Interest"}
+        text5={"Invested Capital"}
+      />
     </div>
   );
 }
