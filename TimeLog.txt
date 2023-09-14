@@ -596,19 +596,19 @@ To-do:
     12:15 Lunch
     13:15 Learning
     17:00 Offline
-17/07/2023 
+17/08/2023 
     09:00 Learning
     12:30 Lunch
     13:30 Planning
     14:30 Learning
     17:00 Offline
-18/07/2023 
+18/08/2023 
     09:00 Learning
     13:40 Lunch
     14:40 Learning  
     16:30 Daily
     17:15 Offline
-21/07/2023
+21/08/2023
     09:00 Learning
     11:30 Daily
     11:45 Learning
@@ -616,7 +616,7 @@ To-do:
     13:00 Lunch
     14:00 Learning
     17:00 Offline
-22/07/2023
+22/08/2023
     09:00 Learning
     11:00 Speak-up Meeting
     11:30 Daily
@@ -625,7 +625,7 @@ To-do:
     14:00 Fe BlindSpot
     15:00 Learning
     18:00 Offline
-23/07/2023 
+23/08/2023 
     09:00 Learning
     10:00 Demo
     12:00 Learning
@@ -633,28 +633,123 @@ To-do:
     14:30 Learning
     15:00 Task
     18:00 Offline
-24/07/2023
+24/08/2023
     09:00 Learning
     11:30 Daily
     12:30 Learning
     13:00 Lunch
     14:00 Learning
     17:00 Offline
-25/07/2023
+25/08/2023
     09:00 Learning
     11:30 Daily
     12:00 Learning
     13:30 Lunch
     14:30 Learning
     17:00 Offline
-28/07/2023 
+28/08/2023 
     09:00 Learning
     11:30 Daily
     12:00 Learning
     13:30 Lunch
     14:30 Learning
     17:00 Offline
-    
+29/08/2023
+    09:00 Learning 
+    11:30 Daily
+    12:00 Learning
+    13:30 Lunch
+    14:30 Learning
+    17:00 Offline
+30/08/2023
+    09:30 Learning
+    11:30 Daily
+    13:00 Lunch
+    14:00 Learning
+    15:30 Global web Engineering
+    16:15 Learning
+    17:00 Offline
+31/08/2023
+    09:00 Office Day
+01/09/2023
+    09:00 Task
+    11:30 Daily
+    12:00 Task
+    13:00 Lunch
+    14:00 Retrosperpective
+    15:00 Task
+    17:00 Offline
+04/09/2023
+    09:00 Task
+    11:30 Daily
+    12:00 Task
+    13:00 Lunch
+    14:00 Task
+    17:00 Offline
+05/09/2023 
+    09:00 Task
+    11:30 Daily
+    12:00 Task
+    13:00 Lunch
+    14:00 Fe BlindSpot
+    15:00 Task
+    17:00 Offline
+06/09/2023
+    09:00 Task
+    11:30 Daily
+    12:00 Task
+    12:30 On Call Meeting
+    13:30 Lunch
+    14:30 Task
+    17:00 Offline
+07/09/2023
+    09:30 Task
+    11:30 Refinement
+    12:30 Task
+    13:30 Lunch
+    14:30 Task
+    17:30 Offline
+08/09/2023
+    09:00 Task
+    11:30 Daily
+    12:00 Task
+    13:30 Lunch
+    14:30 Task
+    17:00 Offline
+11/09/2023
+    09:00 Task
+    11:30 Daily
+    12:00 Task
+    12:30 Townhall
+    13:30 Lunch
+    14:30 Task
+    17:00 Offline
+12/09/2023
+    09:00 Learning
+    11:30 Daily
+    12:00 Learning
+    13:00 Lunch
+    14:00 Learning
+    15:00 Innovation Sprint
+    16:00 Learning
+    17:00 Offline
+13/09/2023
+    09:00 Learning
+    11:30 Daily
+    12:50 Learning
+    13:00 Lunch
+    14:00 Task
+    15:00 Global
+    16:00 Full updates
+14/09/2023
+    09:00 Learning
+    11:30 Daily
+    11:45 Learning
+    13:00 Lunch
+    14:00 Easy Talks
+    15:00 Learning
+    17:00 Offline
+
 
 
 

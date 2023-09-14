@@ -4,10 +4,10 @@ import Buttons from "../Buttons/Buttons";
 import styles from "./UserInput.module.css";
 
 const initialUserInput = {
-  "props.htmlForCal": 1000,
-  "props.htmlForCal2": 1200,
-  "props.htmlForCal3": 7,
-  "props.htmlForCal4": 10,
+  "current-savings": 1000,
+  "yearly-contribution": 1200,
+  "expected-return": 7,
+  "duration": 10
 };
 
 const UserInput = (props) => {
@@ -15,54 +15,40 @@ const UserInput = (props) => {
 
   const submitHandler = (event) => {
     event.preventDefault();
-    console.log("da");
+    props.onCalculate(userInput);
   };
   const resetHandler = () => {
     console.log("nu");
     setUserInput(initialUserInput);
   };
   const changedHandler = (input, value) => {
-    //   console.log(input, value);
-    //   console.log("sunt in app");
+    console.log(input, value);
+    console.log("sunt in app");
     setUserInput((prevInput) => {
       return {
         ...prevInput,
-        [input]: value,
-      };
-
-      console.log(prevInput);
-    });
-    console.log("aici", userInput);
-  };
-  const functieAdi = (ev) => {
-    setUserInput((prevInput) => {
-      return {
-        ...prevInput,
-        ev: userInput,
+        [input]: +value,
       };
     });
-
-    console.log("aici1", ev.userInput);
+    console.log(userInput)
   };
 
   return (
     <form onSubmit={submitHandler} className={styles.form}>
-      <div className={styles["input-group"]}>
+      <div className={styles["input-group"]}> 
         <UserInputFields
           htmlForCalin={props.htmlForCal}
           text={props.text}
-          placeholderCal="valoare mea"
           typeCalin={props.typeCal}
-          //  valueCal={userInput["props.htmlForCal"]}
-
-          onChangedHandler={functieAdi}
+          onChangedHandler={changedHandler}
+          valueCal={userInput["current-savings"]}
         />
         <UserInputFields
           htmlForCalin={props.HtmlForCal2}
           text={props.text2}
           typeCalin={props.typeCal2}
           onChangedHandler={changedHandler}
-          valueCal={userInput["props.htmlForCal2"]}
+          valueCal={userInput["yearly-contribution"]}
         />
       </div>
       <div className={styles["input-group"]}>
@@ -71,14 +57,14 @@ const UserInput = (props) => {
           text={props.text3}
           typeCalin={props.typeCal3}
           onChangedHandler={changedHandler}
-          valueCal={userInput["props.htmlForCal3"]}
+          valueCal={userInput["expected-return"]}
         />
         <UserInputFields
           htmlForCalin={props.HtmlForCal4}
           text={props.text4}
           typeCalin={props.typeCal4}
           onChangedHandler={changedHandler}
-          valueCal={userInput["props.htmlForCal4"]}
+          valueCal={userInput["duration"]}
         />
       </div>
       <Buttons
