@@ -772,9 +772,41 @@ To-do:
     12:40 Learning
     13:30 Lunch
     14:30 Learning
-    
-
-
+    17:00 Offline
+21/09/2023
+    09:00 Innovation
+    13:30 Lunch
+    17:00 Offline    
+22/09/2023
+    09:00 Innovation
+    13:30 Lunch
+    17:00 Offline
+25/09/2023
+    09:00 Innovation
+    13:30 Lunch
+    17:00 Offline    
+26/09/2023
+    09:00 Innovation
+    13:30 Lunch
+    17:00 Offline
+27/09/2023
+    09:00 Innovation
+    13:30 Lunch
+    17:00 Offline
+28/09/2023
+   Day off
+29/09/2023
+    09:00 Innovation
+    13:30 Lunch
+    17:00 Offline
+02/09/2023
+    09:00 Learning
+    11:30 Daily
+    12:00 Learning
+    13:30 Lunch
+    14:30 Learning
+    15:30 Self-assesment
+    17:00 Offline
 
 
 
