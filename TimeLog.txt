@@ -849,6 +849,17 @@ To-do:
     13:30 Lunch
     14:30 Learning
     18:00 Offline
+12/10/2023
+    09:00 Office Day
+13/10/2023
+    09:00 Learning
+    13:30 Lunch
+    17:30 Offline
+16/10/2023
+    09:00 Learning
+    13:30 Lunch
+    17:30 Offline
+
 
 
     
