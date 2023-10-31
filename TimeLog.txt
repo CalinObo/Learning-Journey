@@ -901,7 +901,19 @@ To-do:
     12:00 Learning
     12:30 Checking Icons
     13:30 Lunch
+    14:30 Checking legal documents
+    15:30 Learning
     17:30 Offline
+31/10/2023
+    09:00 Learning
+    10:45 IT ALL HANDS
+    13:00 Learning
+    14:00 Lunch
+    15:00 Daily
+    15:50 Learning
+    17:30 Offline
+
+
 
     
 
