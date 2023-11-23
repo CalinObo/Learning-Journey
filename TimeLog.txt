@@ -912,10 +912,36 @@ To-do:
     15:00 Daily
     15:50 Learning
     17:30 Offline
+09/11-17/11/2023
+    Time Off
+20/11/2023
+    09:30 Learning
+    11:30 Daily
+    12:30 Learning
+    13:40 Lunch
+    14:40 Learning
+    17:30 Offline
+21/11/2023
+    09:30 Learning
+    13:30 Lunch
+    14:30 Daily
+    16:00 Task
+    17:30 Offline
+22/11/2023
+    09:00 Task
+    11:30 Daily
+    12:10 Task
+    13:00 Lunch
+    14:00 Webinar Regina Maria
+    15:00 Task
+    17:30 Lunch
+23/11/2023
+    09:30 Task
+    12:30 Lunch
+    13:30 Planning
+    15:00 Task
+    17:30 Offline
 
-
-
-    
 
 
 
