@@ -1,0 +1,3 @@
+Section 15: Sending HTTP requests (e.g Connecting to a Database)
+
+What is fetch()

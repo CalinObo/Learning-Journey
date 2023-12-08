@@ -941,6 +941,69 @@ To-do:
     13:30 Planning
     15:00 Task
     17:30 Offline
+24/11/2023
+    09:00 Task
+    10:30 Demo
+    12:30 Task
+    13:30 Lunch
+    14:30 Task
+    17:30 Offline
+27/11/2023
+    09:00 Task
+    11:30 Daily
+    12:30 Task
+    13:30 Lunch
+    14:30 Task
+    17:30 Offline
+28/11/2023
+    09:30 Task
+    11:30 Daily
+    12:00 Task
+    13:30 Lunch
+    14:30 Learning
+    17:30 Offline
+29/11/2023
+    09:00 Meeting
+    10:00 Task
+    11:30 Daily
+    12:00 Learning
+    13:30 Lunch
+    14:30 Learning
+    17:30 Offline
+04/12/2023
+    09:00 Learning
+    11:30 Daily
+    12:00 Learning
+    13:30 Lunch
+    14:30 Learning
+    17:30 Offline
+05/12/2023
+    09:00 Learning
+    11:30 Daily
+    13:30 Lunch
+    14:30 Learning
+    17:30 Offline
+06/12/2023
+    09:00 Learning
+    11:30 Daily
+    12:00 Learning
+    13:30 Lunch
+    14:30 Learning
+    17:30 Offline
+07/12/2023
+    09:00 Learning
+    13:30 Planning
+    14:30 Lunch
+    15:30 Learning
+    17:30 Offline
+08/12/2023
+    09:00 Learning
+    13:30 Lunch
+    14:30 Learning
+
+
+
+
 
 
 
