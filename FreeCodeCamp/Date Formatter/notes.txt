@@ -1,0 +1,49 @@
+{
+    In JavaScript, there are many built-in constructors that create objects. A constructor is like a regular function, but starts with a capital letter, and is initialized with the new operator.
+
+    For example, you can use the Date() constructor with the new operator to create a new Date object that returns a string with the current date and time:
+
+    const currentDate = new Date();
+    console.log(currentDate);
+
+    // Output:
+    // Mon Aug 23 2021 15:31:00 GMT-0400 (Eastern Daylight Time)
+
+}
+
+{
+    The Date object has a number of methods that allow you to get the date and time in different formats.
+
+    One of those is the .getDate() method, which returns a number between 1 and 31 that represents the day of the month for that date. For example:
+
+    const date = new Date();
+    const dayOfTheMonth = date.getDate();
+    console.log(dayOfTheMonth); // 20
+}
+
+{
+    A switch statement is used to compare an expression against multiple possible values and execute different code blocks based on the match. It's commonly used for branching logic.
+
+    For example, here's how to compare the expression dayOfWeek against possible values:
+
+    switch (dayOfWeek) {
+    case 1:
+        console.log("It's Monday!");
+        break;
+    case 2:
+        console.log("It's Tuesday!");
+        break;
+    // ...cases for other workdays
+    default:
+        console.log("It's the weekend!");
+    }
+}
+
+{
+    To do this, you can add a case clause in the switch statement that checks for a match against the expression expr, followed by code to run if there's a match. Here's an example where the case clause checks that expr is equal to the string case123:
+
+    switch (expr) {
+    case 'case123':
+        // Write your logic here
+    }
+}

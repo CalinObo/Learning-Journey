@@ -1,0 +1,16 @@
+body{
+    background-color: bisque;
+}
+#application{
+    display: grid;
+    background-color: chocolate;
+    margin: 4em auto;
+    padding: 1em;
+    width: 400px;
+    text-align: center;
+    gap: 2em
+}
+#check-btn{
+    width: 40%;
+    margin: 0 auto;
+}
