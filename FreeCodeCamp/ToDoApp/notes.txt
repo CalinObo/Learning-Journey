@@ -35,3 +35,57 @@
 
     console.log(Date.now()); // 1628586800000
 }
+
+{
+    Date.now() returns the number of milliseconds elapsed since January 1, 1970 00:00:00 UTC.
+}
+
+{
+    unshift() is an array method that is used to add one or more elements to the beginning of an array.
+}
+
+{   
+     this is a keyword that refers to the current context. In this case, this points to the element that triggers the event – the buttons. 
+}
+
+{
+    splice() is an array method that modifies arrays by removing, replacing, or adding elements at a specified index, while also returning the removed elements. 
+    It can take up to three arguments: the first one is the mandatory index at which to start, the second is the number of items to remove, and the third is an optional replacement element. Here's an example:
+
+    const fruits = ["mango", "date", "cherry", "banana", "apple"];
+
+    // Remove date and cherry from the array starting at index 1
+    const removedFruits = fruits.splice(1, 2);
+
+    console.log(fruits); // [ 'mango', 'banana', 'apple' ]
+    console.log(removedFruits); // [ 'date', 'cherry' ]
+}
+
+{
+    localStorage offers methods for saving, retrieving, and deleting items. The items you save can be of any JavaScript data type.
+
+    For instance, the setItem() method is used to save an item, and the getItem() method retrieves the item. To delete a specific item, you can utilize the removeItem() method, or if you want to delete all items in the storage, you can use clear().
+
+    Here's how you can save an item:
+
+    localStorage.setItem("key", value); // value could be string, number, or any other data type
+}
+
+{
+
+    const myTaskArr = [
+  { task: "Walk the Dog", date: "22-04-2022" },
+  { task: "Read some books", date: "02-11-2023" },
+  { task: "Watch football", date: "10-08-2021" },
+    ];
+
+    localStorage.setItem("data", JSON.stringify(myTaskArr));
+
+    localStorage.clear();
+
+    const getTaskArr = localStorage.getItem("data")
+    console.log(getTaskArr)
+
+    const getTaskArrObj = JSON.parse(localStorage.getItem("data"));
+    console.log(getTaskArrObj);
+}
