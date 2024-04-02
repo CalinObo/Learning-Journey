@@ -1,0 +1,63 @@
+{
+    As a reminder, you can access the value attribute of an element by using dot or bracket notation.
+}
+{
+    The keydown event fires every time a user presses a key on their keyboard, and is a good way to add more interactivity to input elements.
+}
+
+{
+    numberInput.addEvenListener("keydown",(e) => {
+        console.log(e)
+    })
+
+    If you open your browser's console and type in the number input, you'll see event objects logged to the browser. 
+    And if you take a closer look at one of those event objects, you'll see helpful properties like type and target.
+
+    Since you want to perform an action when the Enter key is pressed, the most helpful property is key, which tells you the string value of the key that was pressed.
+}
+
+{
+    In an earlier project you learned about truthy and falsy values, which are values that evaluate to true or false. In JavaScript, some common falsy values you'll see are null, undefined, the number 0, and empty strings.
+
+    Rather than check if a value is equal to a falsy value, you can use the logical NOT operator (!) to check if the value itself is falsy. For example:
+
+    const num = 0;
+
+    console.log(num === 0); // true
+    console.log(!num); // true
+}
+
+{
+    Because the input type="number" element allows special characters like ., +, and e, users can input floats like 2.2, equations like 2e+3, or even just e, which you don't want to allow.
+
+    A good way to check and normalize numbers in JavaScript is to use the built-in parseInt() function, which converts a string into an integer or whole number. parseInt() takes at least one argument, a string to be converted into an integer, and returns either an integer or NaN which stands for Not a Number. For example:
+
+    parseInt(2.2); // 2
+    parseInt("2e+3"); // 2
+    parseInt("e") // NaN
+}
+{
+    Next, you need to check if the value returned by the parseInt() function is a number or not.
+
+    To do that, you can use the isNaN() function. This function takes in a string or number as an argument, and returns true if it evaluates to NaN. For example:
+
+    isNaN("test"); // true
+    isNaN(2); // false
+    isNaN("3.5"); // false
+}
+
+{
+    Binary numbers are a base-2 number system. Unlike the base-10 or decimal number system we use every day that uses 10 digits (0-9) to form numbers, the binary number system only has two digits, 0 and 1. 
+    In computer science, these binary digits are called bits, and are the smallest unit of data computers can process.
+    For computers, 0 represents false or "off", and 1 represents true or "on".
+}
+
+{
+    Bits are often grouped into an octet, which is an 8-bit set known as a byte. A byte can represent any number between 0 and 255. Here are the placement values for each bit in a byte:
+
+    128 | 64 | 32 | 16 | 8 | 4 | 2 | 1
+    Because bits are often grouped into bytes, it's common to see binary numbers represented in groups of eight, sometimes with leading zeros. For example, the number 52 can be represented as 110100, or 00110100 with leading zeros. Here's how that breaks down with the placement values:
+
+    128 | 64 | 32 | 16 | 8 | 4 | 2 | 1
+      0 |  0 |  1 |  1 | 0 | 1 | 0 | 0
+}
