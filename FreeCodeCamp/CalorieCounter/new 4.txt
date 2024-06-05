@@ -1,0 +1,7 @@
+        dispatch(setClientData({name:'locality',value:''}))
+        dispatch(setInstalationAddress({locality:''}))
+        dispatch(setInstalationAddress({ county: selection }));
+        dispatch(setCoverageCheckDropdownOptions({locality:''}))
+        dispatch(setClientData({ name: 'county', value: selection.value }));
+        console.log(clientData.locality==null,typeof(clientData.locality),"Client data e"+clientData.locality)
+        getLocalityOptionsContractDetails(

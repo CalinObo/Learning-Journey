@@ -1,0 +1,59 @@
+Objects are non primitive data types that store key-value pairs. Non primitive data types are mutable data types that are not undefined, null, boolean, number, string or symbol.
+
+Mutable means that the data can be changed after it is created.
+
+Here is the basic syntax for an object:
+{
+    key:value
+}
+
+Objects are similar to arrays, except that instead of using indexes to acces and modify their data, you access the data in objects through properties.
+
+Properties consist of a key and a value. The key is the name of the property, and the value is the data stored in the property.
+
+Here is an example of an object with a single property.
+
+const obj={
+    name:"Calin Iulian"
+};
+
+If the propert name(key) of an object has a space in it, you will need to use single or double quotes around the name.
+
+Here is an example of an object with a property name that has a space:
+
+const spaceObj={
+    "Space Name":"Kirk"
+}
+
+If you tried to write a key without he quotes, it would throw an error:
+
+const spaceObj={
+    Space Name :"Kirk"
+} throws an error
+
+There are two ways to access the properties of an object: dot notation (.) and bracket notation ([]), similar to an array.
+
+Dot notation is what you use when you know the name of the property you`re trying to access ahead of time.
+
+object.property
+
+Here is a sample of using dot notation (.) to read the name property of the developer object:
+
+const developer = {
+    name:"Jessica"
+}
+
+console.log(developer.name)
+
+The second way to acces the properties of an object is bracket notation ([]). If the property of the object you are trying to acces has a space in its name, you will need 
+to use bracket notation.
+
+objectName["property name"];
+
+Here is a sampe of using bracket notatin to read an object`s property:
+
+const spaceObj={
+    "Space Name":"Kirk"
+};
+
+spaceObj["Space Name"]

@@ -1,0 +1,39 @@
+Javascript has seven primitive data types, with String being one of them.
+
+When a variable is declared with the let keyword, you can reassign (or change the value of) that variable later on.
+
+An array is a non-primitive data type that can hold a series of values. Non-primitive data types differ from primitive data types in that they can hold more complex data.
+Primitive data types like strings and numbers can only hold one value at a time.
+
+You can make use of the .length property of an array - this returns the number of elements in the array. To get the last element of any array, you can use the following syntax:
+array[array.length-1]
+
+A method in Javascript is a function that`s associated with certain values or objects. An example you`ve already ecountered is the .log() method, which is part of the console object.
+
+Arrays have their own methods, and the first you will explore is the .push() method. This allows you to "push" a value to the end of an array.
+If we console log the .push() method it will return the new length of the array, after adding the value we`ve given.
+
+Another method essential for this project is the .pop() method. It removes the last element from an array and returns that element.
+
+A const variable cannot be reassigned liket a let variable. A const variable cannot be uninitialized. This code would throw an error:
+const firstName;
+
+.repeat() methos is available to strings. This method accepts a number as an argument, specifying the number of times to repeat the target string.
+For example, using .repeat() to generate the string "Code! Code! Code!":
+const activity="Code!"
+activity.repeat(3)
+
+A function is a block of code that can be reuse throughout your application. 
+The function keyword tells JavaScript that the name variable is going to be a function. parameter is a variable that represents a value that is passed into the function when it is used.
+A function may have as many, or as few, parameters as you`d like. Like a for loop, the space between the curly braces is the function body.
+
+In order to use a function, you need to call it. A function call tells your application to run the code from the function wherever you choose to call it. The syntax for a function call is 
+the function name followed by parantheses.
+
+Arrays have a special length property that allows you to see how many values, or elements, are in the array. You would access this property using syntax like myArray.length.
+
+The .unshift() method of an array allows you to add a value to the beginning of the array, unlike .push() which adds the value at the end of the array.
+
+Notice that like .push(), .unshift() returns the new length of the arrat after the element is added.
+
+Arrays also have a .shift() method. This will remove the first element of the array, unlike .pop() which removes the last element.
